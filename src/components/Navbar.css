@@ -3,5 +3,6 @@
 }
 
 .menu-bar {
+    /* todo: remove temporary border; it's only for visibility */
     border-style: groove;
 }
