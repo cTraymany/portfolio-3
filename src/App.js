@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,8 +17,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      {/* todo: add footer to include email */}
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
