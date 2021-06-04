@@ -3,15 +3,15 @@ import './Navbar.css';
 // import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo_dark from '../images/logo_dark.png';
-import menu from '../images/menu.ico'
+import menu_light from '../images/menu_light.ico'
 
 function Navbar() {
 
 	// function glassesToggle() {
 	// 	if (route is on main page) {
-	// 		the img src = "/images/logo-dark.png"
+	// 		the img src = menu_light
 	// 	} else if (route is on about me) {
-	// 		the img src = "/images/logo-light.png"
+	// 		the img src = menu_dark
 	// 	}
 	// }
 
@@ -30,7 +30,7 @@ function Navbar() {
 					<Link to="/" className="navbar__logo">
 						<img width="40" height="40" alt="reading glasses" src={logo_dark} />
          			</Link>
-					<img className="menu-bar" src={menu} alt="menu bar" />
+					<img className="menu-bar" src={menu_light} alt="menu bar" />
 					<ul className="navbar__menu">
 						<li className="navbar__item">
 							<Link to="/" className="navbar__link" >
