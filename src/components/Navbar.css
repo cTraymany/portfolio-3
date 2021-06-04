@@ -1,3 +1,7 @@
 .navbar__item {
     list-style: none;
 }
+
+.menu-bar {
+    border-style: groove;
+}
