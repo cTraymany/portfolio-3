@@ -27,7 +27,7 @@ export default function Projects() {
 
     return(
         <>
-            {projects.map(project => <ProjectCard project={project}/>)}
+            {projects.map(project => <ProjectCard key={project.image} project={project}/>)}
         </>
     )
 }
