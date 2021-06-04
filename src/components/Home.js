@@ -1,6 +1,11 @@
+import plants from '../images/plants.png'
+
 export default function Home() {
 
     return (
-        <h1>Chindalath Traymany</h1>
+        <>
+            <img src={plants} alt="plants" />
+            <h1>Chindalath Traymany</h1>
+        </>
     )
 }
