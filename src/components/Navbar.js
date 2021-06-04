@@ -1,4 +1,5 @@
 import './Navbar.css';
+// useState to toggle nav icons and change icon colors
 // import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo_dark from '../images/logo_dark.png';
@@ -32,17 +33,26 @@ function Navbar() {
 					<img className="menu-bar" src={menu} alt="menu bar" />
 					<ul className="navbar__menu">
 						<li className="navbar__item">
+							<Link to="/" className="navbar__link" >
+								Home
+							</Link>
+						</li>
+						<li className="navbar__item">
 							<Link to="/about" className="navbar__link" >
 								About
 							</Link>
 						</li>
 						<li className="navbar__item">
-							<Link to="/resume" className="navbar__link">
+							<a href="https://docs.google.com/document/d/1TePmZMUAlMTyqBuH83UNYv3Xugh1QIF8TziIAMLBYWw/edit?usp=sharing" className="navbar__link" target="blank">
 								Resume
-							</Link>
+							</a>
 						</li>
 						<li className="navbar__item">
-							{/* todo: link below will probably not be a link component since it navigates off the website */}
+							<a href="https://www.linkedin.com/in/chindalath/" className="navbar__link" target="blank">
+								LinkedIn
+							</a>
+						</li>
+						<li className="navbar__item">
 							<a href="https://chindalatht.medium.com/" className="navbar__link" target="blank">
 								Blog
 							</a>
