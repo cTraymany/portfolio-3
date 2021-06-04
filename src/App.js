@@ -10,11 +10,11 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" exact >
-          <Home />
-        </Route>
         <Route path="/about" exact>
           <About />
+        </Route>
+        <Route path="/" >
+          <Home />
         </Route>
       </Switch>
       {/* todo: add footer to include email */}
