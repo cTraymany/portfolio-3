@@ -1,4 +1,4 @@
-import about_me from '../images/about_me'
+import about_me from '../images/about_me.png'
 
 export default function About() {
     return (
