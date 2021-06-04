@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Projects from './components/Projects'
+import About from './components/About'
 
 function App() {
   return (
@@ -11,10 +11,13 @@ function App() {
       <Switch>
         <Route path="/" exact >
           <Home />
-          <Projects />
+        </Route>
+        <Route path="/about" exact>
+          <About />
         </Route>
       </Switch>
-
+      {/* todo: add footer to include email */}
+      {/* <Footer /> */}
     </Router>
   );
 }
