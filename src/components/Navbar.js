@@ -2,8 +2,10 @@ import './Navbar.css';
 // useState to toggle nav icons and change icon colors
 // import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import logo_dark from '../images/logo_dark.png';
-import menu_light from '../images/menu_light.ico'
+// import logo from '../images/logo.svg';
+import { ReactComponent as Menu } from '../images/menu.svg'
+import { ReactComponent as Close} from '../images/close.svg'
+import { ReactComponent as Logo } from '../images/logo.svg';
 
 function Navbar() {
 
@@ -28,9 +30,8 @@ function Navbar() {
 				<div className="navbar__container">
 					{/* todo: might have to change the Link component to NavLink */}
 					<Link to="/" className="navbar__logo">
-						<img width="40" height="40" alt="reading glasses" src={logo_dark} />
+						<Logo />
          			</Link>
-					<img className="menu-bar" src={menu_light} alt="menu bar" />
 					<ul className="navbar__menu">
 						<li className="navbar__item">
 							<Link to="/" className="navbar__link" >
