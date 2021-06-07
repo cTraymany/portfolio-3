@@ -1,3 +1,18 @@
 .navbar__item {
     list-style: none;
 }
+
+.homePage {
+    fill: FFFFFF;
+    color: 636363;
+}
+
+.aboutPage {
+    fill: 636363;
+    color: 636363;
+}
+
+.mobile {
+    fill: FFFFFF;
+    color: 636363;
+}
