@@ -1,6 +1,6 @@
 import './Navbar.css';
 // useState to toggle nav icons and change icon colors
-// import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import logo from '../images/logo.svg';
 import { ReactComponent as Menu } from '../images/menu.svg'
@@ -8,14 +8,21 @@ import { ReactComponent as Close} from '../images/close.svg'
 import { ReactComponent as Logo } from '../images/logo.svg';
 
 function Navbar() {
+	const [logoColor, setLogoColor] = useState("white")
 
-	// function glassesToggle() {
-	// 	if (route is on main page) {
-	// 		the img src = menu_light
-	// 	} else if (route is on about me) {
-	// 		the img src = menu_dark
-	// 	}
-	// }
+	useEffect(() => {
+		// todo: color doesn't change because component is not being re-rendered.
+		// component is not being re-rendered because there is no change;
+		// the change is within the path, and not the component
+		switch (window.location.pathname) {
+			case "/about":
+				setLogoColor("black")
+				return logoColor
+			default:
+				setLogoColor("white")
+				return logoColor
+		}
+	}, [logoColor])
 
 	// function menuToggle() {
 	// 	if menu (is active) {
@@ -30,7 +37,7 @@ function Navbar() {
 				<div className="navbar__container">
 					{/* todo: might have to change the Link component to NavLink */}
 					<Link to="/" className="navbar__logo">
-						<Logo />
+						<Logo fill={logoColor} />
          			</Link>
 					<ul className="navbar__menu">
 						<li className="navbar__item">
