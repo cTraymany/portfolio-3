@@ -2,8 +2,8 @@
     position: relative
 }
 
-.hero {
-}
+/* .hero {
+} */
 
 .hero__container {
     align-items: center;
@@ -14,6 +14,7 @@
     z-index: -1;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .hero__title {
@@ -51,7 +52,18 @@
 
 .navbar__link {
     text-decoration: none;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}
+
+.navbar--home .navbar__link {
     color: #FEFEFE;
+}
+
+.navbar--about .navbar__link {
+    color: #636363;
 }
 
 /* a:link {
