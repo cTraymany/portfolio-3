@@ -1,18 +1,91 @@
+.footer {
+    position: relative
+}
+
+/* .hero {
+} */
+
+.hero__container {
+    align-items: center;
+}
+
+.hero__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero__title {
+    /* width: 50%; */
+    font-size: 80px;
+    font-family: 'playfair display';
+    color: #FEFEFE;
+    font-weight: 400;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+.hero__subtitle {
+    font-size: 28px;
+    font-family: 'montserrat';
+    color: #FEFEFE;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar {
+    z-index: 1;
+    position: relative;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar__item {
     list-style: none;
+    text-decoration: none;
 }
 
-.homePage {
-    fill: FFFFFF;
-    color: 636363;
+.navbar__link {
+    text-decoration: none;
 }
 
-.aboutPage {
-    fill: 636363;
-    color: 636363;
+.navbar__link:hover {
+    text-decoration: underline;
 }
 
-.mobile {
-    fill: FFFFFF;
-    color: 636363;
+.navbar--home .navbar__link {
+    color: #FEFEFE;
+}
+
+.navbar--about .navbar__link {
+    color: #636363;
+}
+
+/* a:link {
+}
+
+a:visited {
+}
+
+a:hover{
+}
+
+a:visited{
+} */
+
+.navbar__logo {
+    /* todo: width and height is behaving like top and left properties for svg */
+    width: 64px;
+    height: 64px;
+}    
+
+.navbar__menu {
+display: flex;
+justify-content: space-between;
+width: 75%;
 }
