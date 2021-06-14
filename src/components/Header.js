@@ -1,5 +1,4 @@
-import './Navbar.css';
-// todo: organize the css
+import './Header.css';
 
 export default function Header() {
 
@@ -13,7 +12,6 @@ export default function Header() {
                     <span> | </span>
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
-                {/* todo: turn this upsidedown and enlarge lol */}
                 <div className="hero__arrow" >^</div>
             </div>
         </header>
