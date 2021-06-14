@@ -26,8 +26,8 @@ export default function Projects() {
 
 
     return(
-        <>
+        <div className="projects__container">
             {projects.map(project => <ProjectCard key={project.image} project={project}/>)}
-        </>
+        </div>
     )
 }

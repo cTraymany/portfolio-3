@@ -1,72 +1,165 @@
-.footer {
-    position: relative
+/* todo: animation transform y on nav and logo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* .hero {
-} */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+    height: 95vh;
+    background-image: url('../images/plants.png');
+    background-size: cover;
+    background-position: top;
+}
 
 .hero__container {
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FEFEFE;
+    backface-visibility: hidden;
+
 }
 
-.hero__image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
+.hero__primary {
+    font-family: 'Playfair Display';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveInLeft 1s ease-out;
+}
+
+.hero__secondary {
+    font-weight: 400;
+    color: #999999;
+    animation: moveInRight 1s ease-out;
+
+}
+
+/* .hero-secondary > span {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.hero__secondary > span:first-child {
+    color: #fefefe;
+}
+
+
+.hero__arrow {
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    transform: rotate(-180deg);
+    font-weight: 100;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 820px){
-    .hero__title {
+    .hero__primary {
         font-size: 80px;
-        font-family: 'playfair display';
-        color: #FEFEFE;
         font-weight: 400;
+        height: 107px;
+        min-width: 820px;
+        
     }
 
-    .hero__subtitle {
+    .hero__secondary >span:first-child {
+        font-weight: 700;
+    }
+
+    .hero__secondary {
         font-size: 28px;
-        font-family: 'montserrat';
-        color: #FEFEFE;
         font-style: normal;
-        font-weight: 400;
-    }
+        display: flex;
+        justify-content: center;
 
+    }
 }
 
 @media screen and (max-width: 820px){
-    .hero__title {
-        /* width: 50%; */
+    .hero__primary {
         font-size: 45px;
-        font-family: 'playfair display';
-        color: #FEFEFE;
         font-weight: 400;
-        /* align-items: center; */
-        flex-wrap: nowrap;
     }
 
-    .hero__subtitle {
+    .hero__secondary {
         font-size: 16px;
-        font-family: 'montserrat';
-        color: #FEFEFE;
         font-style: normal;
-        font-weight: 400;
+        display: flex;
+    justify-content: center;
     }
 
+    .hero__secondary > span:nth-of-type(1) {
+        /* display: block; */
+    }
+
+    .hero__secondary > span:nth-of-type(2) {
+        /* display: none; */
+    }
+    
+    .hero__secondary > span:nth-of-type(3) {
+        /* display: block; */
+    }
 }
 
+/* @media screen and (orientation: portrait) {
+    
+} */
 
 
-.navbar {
+
+
+/* .navbar {
+    position: absolute;
     z-index: 1;
-    position: relative;
     width: 100%;
-}
+} */
 
-.navbar__container {
+/* .navbar__container {
     display: flex;
     justify-content: space-between;
+    margin: 0 10px;
 }
 
 .navbar__item {
@@ -80,15 +173,15 @@
 
 .navbar__link:hover {
     text-decoration: underline;
-}
+} */
 
-.navbar--home .navbar__link {
+/* .navbar--home .navbar__link {
     color: #FEFEFE;
 }
 
 .navbar--about .navbar__link {
     color: #636363;
-}
+} */
 
 /* a:link {
 }
@@ -102,15 +195,19 @@ a:hover{
 a:visited{
 } */
 
-.navbar__logo {
+/* .navbar__logo { */
     /* todo: width and height is behaving like top and left properties for svg */
-    width: 64px;
-    height: 64px;
-}    
+    /* width: 64px;
+    height: 64px; */
+/* }     */
 
-.navbar__menu {
+/* .navbar__menu {
 display: flex;
 justify-content: space-around;
 max-width: 500px;
 min-width: 350px;
-}
+} */
+
+/* .projects__container {
+    position: relative;
+} */
