@@ -1,0 +1,32 @@
+
+@media screen and (min-width: 820px){
+    .projects__container {
+        margin: 30px;
+    
+        .project {
+            background-color: red;
+            margin: 0 20px;
+            overflow: hidden;
+            // display: inline-block;
+    
+            .project__image img {
+                float: left;
+                width: 50vw;
+                // todo: min-width: ;
+            }
+    
+            .project__description {
+    
+                float: right;
+    
+                // h3 {
+    
+                // }
+    
+                p {
+                    background-color: #fefefe;
+                }
+            }
+        }
+    }
+}

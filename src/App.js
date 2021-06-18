@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
 import Navbar from './components/Navbar.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import About from './components/About'
 // import Footer from './components/Footer'
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         </Route>
         <Route path="/">
           <Header />
-          {/* <Projects /> */}
+          <Projects />
         </Route>
       </Switch>
       {/* <Footer /> */}

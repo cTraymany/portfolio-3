@@ -1,3 +1,4 @@
+import './Projects.scss'
 import ProjectCard from './ProjectCard'
 import country_cli from '../images/country_cli.png'
 import problem_solver from '../images/problem_solver.png'

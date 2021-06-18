@@ -1,8 +1,10 @@
 /* todo: animation transform y on nav and logo on hover */
 /* todo: moveInLeft logo and animation-fill-mode to backwards */
+// tablet 768 x 1024
+// desktop > 1024
 
 .hero {
-    height: 95vh;
+    height: 100vh;
     background-image: url('../images/plants.png');
     background-size: cover;
     background-position: top;
@@ -16,6 +18,8 @@
     color: #FEFEFE;
     backface-visibility: hidden;
     text-align: center;
+    animation: fadeIn 4s ease-out;
+
 }
 
 .hero__primary {
@@ -23,13 +27,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moveInLeft 1.5s ease-out;
+    // animation: fadeIn 4s ease-out;
+    // animation: moveInLeft 1.5s ease-out;
 }
 
 .hero__secondary {
     font-weight: 400;
     color: #999999;
-    animation: moveInRight 1.5s ease-out;
+    // animation: fadeIn 4s ease-out;
+
+    // animation: moveInRight 1.5s ease-out;
 
 }
 
@@ -49,7 +56,7 @@
     display: flex;
     transform: rotate(-180deg);
     font-weight: 100;
-    animation: fadeIn 4s ease-out;
+    // animation: fadeIn 4s ease-out;
 }
 
 @keyframes moveInLeft {

@@ -3,13 +3,13 @@
 .navbar {
     position: absolute;
     width: 100%;
+    animation: fadeIn 4s ease-out;
 }
-
-$font-color-dark: #636363;
-$font-color-light: #FEFEFE;
 
 .navbar__container {
     margin: 30px;
+    // todo: if width becomes smaller than this, change nav to hamburger icon
+    min-width: 550px;
 }
 
 .navbar--home {
@@ -32,14 +32,11 @@ $font-color-light: #FEFEFE;
 .navbar__menu {
     list-style: none;
     float: right;
+    min-width: 460px;
 
     li {
         display: inline-block;
         margin-left: 30px;
-
-        &:first-child {
-            margin: 0
-        }
 
         a {
             text-decoration: none;
