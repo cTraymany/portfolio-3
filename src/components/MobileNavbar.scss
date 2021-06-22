@@ -1,0 +1,109 @@
+// todo: @mixin and @include DRY
+    .mobile__navbar {
+        position: absolute;
+        width: 100%;
+        animation: fadeIn 4s ease-out;
+    }
+    
+    .mobile__navbar__container {
+        margin: 30px;
+        // todo: if width becomes smaller than this, change nav to hamburger icon
+        min-width: 550px;
+    }
+
+    .mobile__menu {
+        position: absolute;
+        
+        background: #FEFEFE;
+        border: solid;
+        width: 500px;
+        height: 500px;
+        
+    }
+    
+    .navbar--home {
+        a{
+            color: #FEFEFE;
+        }
+    }
+    
+    .navbar--about {
+        a {
+            color: #636363;
+        }
+}
+
+.navbar__logo {
+    float: left;
+    transform: translateY(-7px);
+}
+
+.navbar__menu {
+    list-style: none;
+    float: right;
+    min-width: 460px;
+
+    li {
+        display: inline-block;
+        margin-left: 30px;
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.navbar__item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+} */
+
+/* a:link {
+}
+
+a:visited {
+}
+
+a:hover{
+}
+
+a:visited{
+} */
+
+/* .navbar__logo { */
+    /* todo: width and height is behaving like top and left properties for svg */
+    /* width: 64px;
+    height: 64px; */
+    /* }     */
+    
+    /* .navbar__menu {
+        display: flex;
+        justify-content: space-around;
+        max-width: 500px;
+        min-width: 350px;
+    } */
+    
+    /* .projects__container {
+        position: relative;
+    } */
+
+@media screen and (min-width: 1024px) {
+    .mobile__navbar {
+        display: none;
+    }
+}
