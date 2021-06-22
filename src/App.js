@@ -1,15 +1,42 @@
 import './App.scss';
 import Navbar from './components/Navbar.js';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import About from './components/About'
 // import Footer from './components/Footer'
 import Projects from './components/Projects';
+import { useLocation } from 'react-router'
+import React, { useState, useEffect } from 'react';
+// import { ReactComponent as Menu } from '../images/menu.svg'
+// import { ReactComponent as Close} from '../images/close.svg'
+import MobileNavbar from './components/MobileNavbar'
 
 function App() {
+  const [logoColor, setLogoColor] = useState("#FEFEFE")
+	const location = useLocation()
+  
+	useEffect(() => {
+		switch (location.pathname) {
+			case "/about":
+				setLogoColor("#636363")
+				return logoColor
+			default:
+				setLogoColor("#FEFEFE")
+				return logoColor
+		}
+	}, [location]) // eslint-disable-line
+
+  	// function menuToggle() {
+	// 	if menu (is active) {
+	// 		show menu
+	// 	}
+	// 	show menu icon
+	// }
+
   return (
-    <Router>
-      <Navbar />
+    <>
+      <Navbar location={location} logoColor={logoColor} />
+      <MobileNavbar location={location} logoColor={logoColor} />
       <Switch>
         <Route path="/about" exact>
           <About />
@@ -20,7 +47,7 @@ function App() {
         </Route>
       </Switch>
       {/* <Footer /> */}
-    </Router>
+    </>
   );
 }
 
