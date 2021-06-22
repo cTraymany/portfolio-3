@@ -1,6 +1,8 @@
-$font-color-black: #1E1E1E;
-$font-color-grey: #636363;
-$font-color-white: #FEFEFE;
+    $font-color-black: #1E1E1E;
+    $font-color-grey: #636363;
+    $font-color-white: #FEFEFE;
+    $breakpoint-tablet: 768px;
+    $breakpoint-desktop: 1024px;
 
 * {
     margin: 0;
@@ -10,4 +12,12 @@ $font-color-white: #FEFEFE;
 
 body {
     font-family: "Montserrat", sans-serif;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: inline-block;
 }
