@@ -4,27 +4,59 @@
         margin: 30px;
     
         .project {
+            position: relative;
             background-color: red;
-            margin: 0 20px;
-            overflow: hidden;
+            display: flex;
+            // margin: 20px 0;
+            align-content: space-between;
+            // overflow: hidden;
             // display: inline-block;
     
-            .project__image img {
-                float: left;
-                width: 50vw;
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+
+                .project__description {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+
+            .project__image {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
                 // todo: min-width: ;
+            }
+
+            .project__description:nth-of-type(2) {
+                h3 {
+                    text-align: left;
+                }
             }
     
             .project__description {
+                width: 50%;
+                position: absolute;
+                left: 400px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                // align-items: center;
     
-                float: right;
-    
-                // h3 {
-    
-                // }
-    
+                h3 {
+                    text-align: right;
+                }
+
                 p {
+
+                    // &:nth-of-type(2) {
+                    //     box-shadow: -13px 13px 28px rgba(0, 0, 0, 0.25);
+                    // }
+
                     background-color: #fefefe;
+                    box-shadow: 13px 13px 28px rgba(0, 0, 0, 0.25);
                 }
             }
         }
