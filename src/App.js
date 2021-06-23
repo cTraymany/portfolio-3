@@ -7,8 +7,6 @@ import About from './components/About'
 import Projects from './components/Projects';
 import { useLocation } from 'react-router'
 import React, { useState, useEffect } from 'react';
-// import { ReactComponent as Menu } from '../images/menu.svg'
-// import { ReactComponent as Close} from '../images/close.svg'
 import MobileNavbar from './components/MobileNavbar'
 
 function App() {
@@ -25,13 +23,6 @@ function App() {
 				return logoColor
 		}
 	}, [location]) // eslint-disable-line
-
-  	// function menuToggle() {
-	// 	if menu (is active) {
-	// 		show menu
-	// 	}
-	// 	show menu icon
-	// }
 
   return (
     <>
