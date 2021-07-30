@@ -1,36 +1,36 @@
 // todo: @mixin and @include DRY
-    .mobile__navbar {
-        position: absolute;
-        width: 100%;
-        animation: fadeIn 4s ease-out;
-    }
-    
-    .mobile__navbar__container {
-        margin: 30px;
-        // todo: if width becomes smaller than this, change nav to hamburger icon
-        min-width: 550px;
-    }
+.mobile__navbar {
+    position: absolute;
+    width: 100%;
+    animation: fadeIn 4s ease-out;
+}
 
-    .mobile__menu {
-        position: absolute;
-        
-        background: #FEFEFE;
-        border: solid;
-        width: 500px;
-        height: 500px;
-        
-    }
+.mobile__navbar__container {
+    margin: 30px;
+    // todo: if width becomes smaller than this, change nav to hamburger icon
+    min-width: 550px;
+}
+
+.mobile__menu {
+    position: absolute;
     
-    .navbar--home {
-        a{
-            color: #FEFEFE;
-        }
-    }
+    background: #FEFEFE;
+    border: solid;
+    width: 500px;
+    height: 500px;
     
-    .navbar--about {
-        a {
-            color: #636363;
-        }
+}
+
+.navbar--home {
+    a{
+        color: #FEFEFE;
+    }
+}
+
+.navbar--about {
+    a {
+        color: #636363;
+    }
 }
 
 .navbar__logo {
