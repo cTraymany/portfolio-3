@@ -1,5 +1,5 @@
 /* todo: animation transform y on nav and logo on hover */
-/* todo: moveInLeft logo and animation-fill-mode to backwards */
+/* todo: animation-fill-mode to backwards */
 // tablet 768 x 1024
 // desktop > 1024
 
@@ -27,17 +27,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // animation: fadeIn 4s ease-out;
-    // animation: moveInLeft 1.5s ease-out;
 }
 
 .hero__secondary {
     font-weight: 400;
     color: #999999;
-    // animation: fadeIn 4s ease-out;
-
-    // animation: moveInRight 1.5s ease-out;
-
 }
 
 /* .hero-secondary > span {
@@ -51,36 +45,11 @@
 
 
 .hero__arrow {
-    font-size: 50px;
+    font-size: 5rem;
     justify-content: center;
     display: flex;
     transform: rotate(-180deg);
     font-weight: 100;
-    // animation: fadeIn 4s ease-out;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%)
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%)
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%)
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%)
-    }
 }
 
 @keyframes fadeIn {
@@ -95,12 +64,12 @@
 
 @media screen and (min-width: 667px){
     .hero__primary {
-        font-size: 45px;
+        font-size: 4.5rem;
         font-weight: 400;
     }
 
     .hero__secondary {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-style: normal;
         display: flex;
     justify-content: center;
@@ -121,10 +90,10 @@
 
 @media screen and (min-width: 768px){
     .hero__primary {
-        font-size: 80px;
+        font-size: 8rem;
         font-weight: 400;
-        height: 107px;
-        min-width: 820px;
+        height: 10.7rem;
+        min-width: 82rem;
         
     }
 
@@ -133,7 +102,7 @@
     }
 
     .hero__secondary {
-        font-size: 28px;
+        font-size: 2.8rem;
         font-style: normal;
         display: flex;
         justify-content: center;

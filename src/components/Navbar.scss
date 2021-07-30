@@ -13,9 +13,9 @@
     }
     
     .navbar__container {
-        margin: 30px;
+        margin: 3rem;
         // todo: if width becomes smaller than this, change nav to hamburger icon
-        min-width: 550px;
+        min-width: 55rem;
     }
     
     .navbar--home {
@@ -32,17 +32,18 @@
 
 .navbar__logo {
     float: left;
-    transform: translateY(-7px);
+    transform: translateY(-.7rem);
 }
 
 .navbar__menu {
     list-style: none;
     float: right;
-    min-width: 460px;
+    min-width: 46rem;
+    font-size: 1.6rem;
 
     li {
         display: inline-block;
-        margin-left: 30px;
+        margin-left: 3rem;
         
         a {
             text-decoration: none;
