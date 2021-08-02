@@ -1,4 +1,3 @@
-import './Navbar.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../images/logo.svg';
 

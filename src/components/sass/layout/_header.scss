@@ -3,6 +3,8 @@
 // tablet 768 x 1024
 // desktop > 1024
 
+// @import "sass/base/animations";
+
 .hero {
     height: 100vh;
     background-image: url('../images/plants.png');
@@ -50,16 +52,6 @@
     display: flex;
     transform: rotate(-180deg);
     font-weight: 100;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 @media screen and (min-width: 667px){

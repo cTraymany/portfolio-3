@@ -15,7 +15,7 @@
 
 .mobile__menu {
     position: absolute;
-    
+    font-size: 1.6rem;
     background: #FEFEFE;
     border: solid;
     width: 50rem;
@@ -35,26 +35,26 @@
     }
 }
 
-.navbar__logo {
-    float: left;
-    transform: translateY(-.7rem);
-}
+// .navbar__logo {
+//     float: left;
+//     transform: translateY(-.7rem);
+// }
 
-.navbar__menu {
-    list-style: none;
-    float: right;
-    min-width: 46rem;
+// .navbar__menu {
+//     list-style: none;
+//     float: right;
+//     min-width: 46rem;
 
-    li {
-        display: inline-block;
-        margin-left: 3rem;
+//     li {
+//         display: inline-block;
+//         margin-left: 3rem;
         
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-    }
-}
+//         a {
+//             text-decoration: none;
+//             text-transform: uppercase;
+//         }
+//     }
+// }
 
 /* .navbar__container {
     display: flex;

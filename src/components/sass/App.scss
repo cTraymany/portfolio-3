@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/mobile-navbar";
+@import "layout/navbar";
+@import "layout/projects";
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
