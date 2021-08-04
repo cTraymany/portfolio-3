@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.js';
 import { Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import About from './components/About'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import Projects from './components/Projects';
 import { useLocation } from 'react-router'
 import React, { useState, useEffect } from 'react';
@@ -37,7 +37,7 @@ function App() {
           <Projects />
         </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
