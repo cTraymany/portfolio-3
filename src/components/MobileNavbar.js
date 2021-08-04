@@ -9,7 +9,6 @@ function MobileNavbar({ location, logoColor }) {
     const [menuClass, setMenuClass] = useState(false)
     const [sidebarClass, setSidebarClass] = useState(true)
 
-    
     const handleClick = (event) => {
         setMenuClass(!menuClass)
         setSidebarClass(!sidebarClass)
@@ -22,38 +21,37 @@ function MobileNavbar({ location, logoColor }) {
 				<Link to="/" className="mobile__navbar__logo">
 					<Logo fill={logoColor} />
 				</Link>
-                <Hamburger fill={logoColor} className={!menuClass ? "active" : "inactive"} onClick={handleClick} />
-                <Close fill={logoColor} className={!menuClass ? "inactive" : "active"} onClick={handleClick} />
+                <Hamburger fill={logoColor} className={`hamburger ${!menuClass ? "active" : "inactive"}`} onClick={handleClick} />
+                <Close fill={logoColor} className={`close ${!menuClass ? "inactive" : "active"}`} onClick={handleClick} />
                 <div className={`mobile__menu ${!sidebarClass ? "active" : "inactive"}`} >
-                <ul className="mobile__navbar__list">
-					<li className="mobile__navbar__item">
-						<Link to="/" className="mobile__navbar__link" >
-							Home
-						</Link>
-					</li>
-					<li className="mobile__navbar__item">
-						<Link to="/about" className="mobile__navbar__link" >
-							About
-						</Link>
-					</li>
-					<li className="mobile__navbar__item">
-						<a href="https://docs.google.com/document/d/1TePmZMUAlMTyqBuH83UNYv3Xugh1QIF8TziIAMLBYWw/edit?usp=sharing" className="mobile__navbar__link" target="blank">
-							Resume
-						</a>
-					</li>
-					<li className="mobile__navbar__item">
-						<a href="https://www.linkedin.com/in/chindalath/" className="mobile__navbar__link" target="blank">
-							LinkedIn
-						</a>
-					</li>
-					<li className="mobile__navbar__item">
-						<a href="https://chindalatht.medium.com/" className="mobile__navbar__link" target="blank">
-							Blog
-						</a>
-					</li>
-				</ul>
+					<ul className="mobile__navbar__list">
+						<li className="mobile__navbar__item">
+							<Link to="/" className="mobile__navbar__link" >
+								Home
+							</Link>
+						</li>
+						<li className="mobile__navbar__item">
+							<Link to="/about" className="mobile__navbar__link" >
+								About
+							</Link>
+						</li>
+						<li className="mobile__navbar__item">
+							<a href="https://docs.google.com/document/d/1TePmZMUAlMTyqBuH83UNYv3Xugh1QIF8TziIAMLBYWw/edit?usp=sharing" className="mobile__navbar__link" target="blank">
+								Resume
+							</a>
+						</li>
+						<li className="mobile__navbar__item">
+							<a href="https://www.linkedin.com/in/chindalath/" className="mobile__navbar__link" target="blank">
+								LinkedIn
+							</a>
+						</li>
+						<li className="mobile__navbar__item">
+							<a href="https://chindalatht.medium.com/" className="mobile__navbar__link" target="blank">
+								Blog
+							</a>
+						</li>
+					</ul>
                 </div>
-                
 			</div>
 		</nav>
 	)
