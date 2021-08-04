@@ -1,9 +1,6 @@
 /* todo: animation transform y on nav and logo on hover */
 /* todo: animation-fill-mode to backwards */
 // tablet 768 x 1024
-// desktop > 1024
-
-// @import "sass/base/animations";
 
 .hero {
     height: 100vh;
@@ -47,11 +44,16 @@
 
 
 .hero__arrow {
+    margin-top: 5rem;
     font-size: 5rem;
     justify-content: center;
     display: flex;
     transform: rotate(-180deg);
     font-weight: 100;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 667px){
@@ -63,8 +65,7 @@
     .hero__secondary {
         font-size: 1.6rem;
         font-style: normal;
-        display: flex;
-    justify-content: center;
+        justify-content: center;
     }
 
     // .hero__secondary > span:nth-of-type(1) {

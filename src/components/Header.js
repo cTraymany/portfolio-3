@@ -10,7 +10,8 @@ export default function Header() {
                     <span> | </span>
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
-                <div className="hero__arrow" >^</div>
+                    {/* todo: width of arrow needs to be smaller because of hover */}
+                <span className="hero__arrow" >^</span>
             </div>
         </header>
     )

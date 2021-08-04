@@ -1,4 +1,6 @@
-// // todo: clean code
+// todo: set background colors background-color: #fefefe;
+// todo: clean code
+// todo: min width for media queries
 
 .projects__container {
     font-size: 1.6rem;
@@ -6,11 +8,9 @@
     
     .project {
         max-width: 114rem;
-        // background-color: grey; // todo: testing only
-        margin: 0 auto;
-        margin-top: 10rem;
+        margin: 10rem auto;
 
-        &--description { //todo: testing only
+        &--description {
             z-index: 1;
             
             h3 {
@@ -52,22 +52,18 @@
 
             .project--description {
                 right: 5rem;
+                // top: 50%;
+                // transform: translateY(25%);
             }
     
             h3 {
                 text-align: right;
             }
         }
-    
-        &:not(:last-child) {
-            margin-bottom: 10rem;
-        }
 
         @include clearfix;
 
         [class^="project--"] {
-            // background-color: orangered; // todo: testing only
-
             position: relative;
 
             width: calc((100% - 6rem) / 2);
@@ -76,72 +72,6 @@
             img {
                 width: 100%;
             }
-
         }
     }
 }
-
-// @media screen and (min-width: 768px){
-//     .projects__container {
-//         font-size: 1.6rem;
-//         margin: 3rem;
-    
-//         .project {
-//             position: relative;
-//             background-color: red;
-//             display: flex;
-//             // margin: 20px 0;
-//             align-content: space-between;
-//             // overflow: hidden;
-//             // display: inline-block;
-    
-//             &:nth-child(2) {
-//                 flex-direction: row-reverse;
-
-//                 .project__description {
-//                     position: absolute;
-//                     left: 0;
-//                 }
-//             }
-
-//             .project__image {
-//                 width: 50%;
-
-//                 img {
-//                     width: 100%;
-//                 }
-//                 // todo: min-width: ;
-//             }
-
-//             .project__description:nth-of-type(2) {
-//                 h3 {
-//                     text-align: left;
-//                 }
-//             }
-    
-//             .project__description {
-//                 width: 50%;
-//                 position: absolute;
-//                 left: 40rem;
-//                 top: 50%;
-//                 transform: translateY(-50%);
-
-//                 // align-items: center;
-    
-//                 h3 {
-//                     text-align: right;
-//                 }
-
-//                 p {
-
-//                     // &:nth-of-type(2) {
-//                     //     box-shadow: -13px 13px 28px rgba(0, 0, 0, 0.25);
-//                     // }
-
-//                     box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
-//                     background-color: #fefefe;
-//                 }
-//             }
-//         }
-//     }
-// }
