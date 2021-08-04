@@ -1,4 +1,11 @@
 export default function Header() {
+    // todo: this only works if user is fully at the top of page; if they click halfway down, it scrolls too much.
+    const handleClick = (event) => {
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+          });
+    }
 
     return (
         <header className="hero">
@@ -11,7 +18,7 @@ export default function Header() {
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
                     {/* todo: width of arrow needs to be smaller because of hover */}
-                <span className="hero__arrow" >^</span>
+                <span onClick={handleClick} className="hero__arrow" >^</span>
             </div>
         </header>
     )
