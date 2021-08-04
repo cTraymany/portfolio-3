@@ -94,6 +94,7 @@ body {
     
 } */
 .mobile__navbar {
+  top: 0;
   position: absolute;
   width: 100%;
   animation: fadeIn 4s ease-out; }
@@ -168,6 +169,8 @@ a:visited{
 
 @media screen and (min-width: 1024px) {
   .navbar {
+    top: 0;
+    z-index: 1;
     display: block;
     position: absolute;
     width: 100%;
@@ -283,3 +286,29 @@ a:visited{
       float: left; }
       .projects__container .project [class^="project--"] img {
         width: 100%; }
+
+.about__container {
+  font-size: 1.6rem;
+  margin: 15rem; }
+  .about__container .about {
+    max-width: 114rem;
+    background-color: grey;
+    margin: 0 auto;
+    margin-top: 15rem; }
+    .about__container .about--image {
+      width: calc(100% / 3); }
+      .about__container .about--image img {
+        width: 100%; }
+    .about__container .about--text {
+      width: calc(2 * (100% / 3));
+      text-align: center;
+      padding: 5rem;
+      box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+      .about__container .about--text h1 {
+        margin-top: 2.5rem; }
+  .about__container::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .about__container [class^="about--"] {
+    float: left; }

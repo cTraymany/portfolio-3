@@ -2,6 +2,7 @@
 // moble__container and mobile__navbar__container are the same. How to DRY?
 
 .mobile__navbar {
+    top: 0;
     position: absolute;
     width: 100%;
     animation: fadeIn 4s ease-out;
