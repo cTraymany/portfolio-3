@@ -4,6 +4,20 @@
   100% {
     opacity: 1; } }
 
+@keyframes openMenu {
+  0% {
+    transform: translateX(10rem); }
+  100% {
+    transform: translate(0); } }
+
+@keyframes closeMenu {
+  100% {
+    display: inline-block;
+    transform: translateX(10rem); }
+  0% {
+    transform: translate(0);
+    display: none; } }
+
 *,
 *::after,
 *::before {
@@ -101,72 +115,52 @@ body {
     
 } */
 .mobile__navbar {
+  display: block;
   top: 0;
+  z-index: 1;
   position: absolute;
   width: 100%;
   animation: fadeIn 4s ease-out; }
+  .mobile__navbar__container {
+    margin: 3rem;
+    min-width: 55rem; }
+  .mobile__navbar__logo {
+    float: left;
+    transform: translateY(-0.7rem); }
+  .mobile__navbar .mobile__menu.active {
+    font-size: 1.6rem;
+    height: 90vh;
+    width: 40vw;
+    float: right;
+    animation-name: openMenu;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+    .mobile__navbar .mobile__menu.active::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .mobile__navbar .mobile__menu.active ul {
+      list-style: none; }
+      .mobile__navbar .mobile__menu.active ul a {
+        display: block;
+        text-decoration: none;
+        margin: 3rem 3rem;
+        text-align: center; }
+  .mobile__navbar--about .mobile__menu.active {
+    background: #1E1E1E; }
+    .mobile__navbar--about .mobile__menu.active a {
+      color: #FEFEFE;
+      border-bottom: 1px solid #636363; }
+  .mobile__navbar--home .mobile__menu.active {
+    background: #FEFEFE; }
+    .mobile__navbar--home .mobile__menu.active a {
+      color: #1E1E1E;
+      border-bottom: 1px solid #b3b3b3; }
 
-.mobile__navbar__container {
-  margin: 3rem;
-  min-width: 55rem; }
+.hamburger, .close {
+  float: right;
+  transform: translateY(1rem); }
 
-.mobile__menu {
-  position: absolute;
-  font-size: 1.6rem;
-  background: #FEFEFE;
-  border: solid;
-  width: 50rem;
-  height: 50rem; }
-
-.navbar--home a {
-  color: #FEFEFE; }
-
-.navbar--about a {
-  color: #636363; }
-
-/* .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
-}
-
-.navbar__item {
-    list-style: none;
-    text-decoration: none;
-}
-
-.navbar__link {
-    text-decoration: none;
-}
-
-.navbar__link:hover {
-    text-decoration: underline;
-} */
-/* a:link {
-}
-
-a:visited {
-}
-
-a:hover{
-}
-
-a:visited{
-} */
-/* .navbar__logo { */
-/* todo: width and height is behaving like top and left properties for svg */
-/* width: 64px;
-    height: 64px; */
-/* }     */
-/* .navbar__menu {
-        display: flex;
-        justify-content: space-around;
-        max-width: 500px;
-        min-width: 350px;
-    } */
-/* .projects__container {
-        position: relative;
-    } */
 @media screen and (min-width: 1024px) {
   .mobile__navbar {
     display: none; } }
@@ -176,9 +170,9 @@ a:visited{
 
 @media screen and (min-width: 1024px) {
   .navbar {
+    display: block;
     top: 0;
     z-index: 1;
-    display: block;
     position: absolute;
     width: 100%;
     animation: fadeIn 4s ease-out; }
@@ -202,56 +196,14 @@ a:visited{
     list-style: none;
     float: right;
     min-width: 46rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin: 2rem; }
     .navbar__menu li {
       display: inline-block;
       margin-left: 3rem; }
       .navbar__menu li a {
         text-decoration: none;
-        text-transform: uppercase; }
-  /* .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
-}
-
-.navbar__item {
-    list-style: none;
-    text-decoration: none;
-}
-
-.navbar__link {
-    text-decoration: none;
-}
-
-.navbar__link:hover {
-    text-decoration: underline;
-} */
-  /* a:link {
-}
-
-a:visited {
-}
-
-a:hover{
-}
-
-a:visited{
-} */
-  /* .navbar__logo { */
-  /* todo: width and height is behaving like top and left properties for svg */
-  /* width: 64px;
-    height: 64px; */
-  /* }     */
-  /* .navbar__menu {
-        display: flex;
-        justify-content: space-around;
-        max-width: 500px;
-        min-width: 350px;
-    } */
-  /* .projects__container {
-        position: relative;
-    } */ }
+        text-transform: uppercase; } }
 
 .projects__container {
   font-size: 1.6rem;
@@ -265,9 +217,25 @@ a:visited{
         font-size: 3rem;
         line-height: 4.5rem;
         margin-bottom: 1rem; }
-      .projects__container .project--description p {
+      .projects__container .project--description .u-box-shadow {
         background-color: #FEFEFE;
         padding: 2.5rem; }
+        .projects__container .project--description .u-box-shadow .project-card-footer {
+          display: inline-block;
+          width: 100%; }
+          .projects__container .project--description .u-box-shadow .project-card-footer ul {
+            list-style: none;
+            float: left; }
+            .projects__container .project--description .u-box-shadow .project-card-footer ul li {
+              border: 1px solid #636363;
+              color: #636363;
+              display: inline-block;
+              padding: .3rem 1rem;
+              margin: 2.5rem 2.5rem 0 0; }
+          .projects__container .project--description .u-box-shadow .project-card-footer svg {
+            float: right;
+            margin: 2.5rem 1rem 0 2.5rem;
+            right: 0; }
     .projects__container .project:nth-child(2) {
       display: flex;
       flex-direction: row-reverse; }
@@ -276,14 +244,14 @@ a:visited{
         right: 5rem; }
       .projects__container .project:nth-child(2) .project--description {
         left: 5rem; }
-        .projects__container .project:nth-child(2) .project--description p {
+        .projects__container .project:nth-child(2) .project--description .u-box-shadow {
           box-shadow: -1.5rem 1.5rem 3rem rgba(30, 30, 30, 0.25); }
     .projects__container .project:not(:nth-child(2)) .project--image {
       margin-right: 6rem;
       left: 5rem; }
     .projects__container .project:not(:nth-child(2)) .project--description {
       right: 5rem; }
-      .projects__container .project:not(:nth-child(2)) .project--description p {
+      .projects__container .project:not(:nth-child(2)) .project--description .u-box-shadow {
         box-shadow: 1.5rem 1.5rem 3rem rgba(30, 30, 30, 0.25); }
     .projects__container .project:not(:nth-child(2)) h3 {
       text-align: right; }

@@ -7,3 +7,21 @@
         opacity: 1;
     }
 }
+
+@keyframes openMenu {
+    0% {
+        transform: translateX(10rem); }
+    100% {
+        transform: translate(0); }
+}
+
+// todo: below doesn't work because menu close changes display to inactive
+@keyframes closeMenu {
+    100% {
+        display: inline-block;
+        transform: translateX(10rem); }
+    0% {
+        transform: translate(0);
+        display: none;
+    }
+}

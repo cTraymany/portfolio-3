@@ -19,10 +19,33 @@
                 margin-bottom: 1rem;
             }
 
-            p {
+            .u-box-shadow {
                 background-color: $font-color-white;
                 padding: 2.5rem;
                 
+                .project-card-footer {
+                    display: inline-block;
+                    width: 100%;
+
+                    ul {
+                        list-style: none;
+                        float: left;
+                        
+                        li {
+                            border: 1px solid $font-color-grey;
+                            color: $font-color-grey;
+                            display: inline-block;
+                            padding: .3rem 1rem;
+                            margin: 2.5rem 2.5rem 0 0;
+                        }
+                    }
+    
+                    svg {
+                        float: right;
+                        margin: 2.5rem 1rem 0 2.5rem;
+                        right: 0;
+                    }
+                }
             }
         }
         
@@ -37,7 +60,7 @@
 
             .project--description {
                 left: 5rem;
-                p {
+                .u-box-shadow {
                     box-shadow: -1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
                 }
             }
@@ -51,7 +74,7 @@
 
             .project--description {
                 right: 5rem;
-                p {
+                .u-box-shadow {
                     box-shadow: 1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
                 }
             }
