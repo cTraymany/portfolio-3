@@ -1,3 +1,4 @@
+// todo: compare html elements; semantic html main & section vs divs
 import './styles/App.css';
 import Navbar from './components/Navbar.js';
 import { Switch, Route } from 'react-router-dom'

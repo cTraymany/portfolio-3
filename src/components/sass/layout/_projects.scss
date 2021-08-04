@@ -20,13 +20,9 @@
             }
 
             p {
-                background-color: white;
+                background-color: $font-color-white;
                 padding: 2.5rem;
-                box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
                 
-                &:nth-of-type(2) {
-                    box-shadow: -1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
-                }
             }
         }
         
@@ -41,6 +37,9 @@
 
             .project--description {
                 left: 5rem;
+                p {
+                    box-shadow: -1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
+                }
             }
         }
         
@@ -52,8 +51,9 @@
 
             .project--description {
                 right: 5rem;
-                // top: 50%;
-                // transform: translateY(25%);
+                p {
+                    box-shadow: 1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
+                }
             }
     
             h3 {

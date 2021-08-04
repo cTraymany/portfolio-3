@@ -24,13 +24,23 @@
     
     .navbar--home {
         a{
-            color: #FEFEFE;
+            color: $font-color-white;
+
+            &:hover {
+                box-shadow: 0 2px 0 rgba($font-color-white, 1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
         }
     }
     
     .navbar--about {
         a {
-            color: #636363;
+            color: $font-color-grey;
+
+            &:hover {
+                box-shadow: 0 2px 0 rgba($font-color-grey, 1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
         }
 }
 

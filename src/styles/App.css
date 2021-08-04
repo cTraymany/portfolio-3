@@ -66,10 +66,10 @@ body {
 .hero__secondary {
   display: inline-block;
   font-weight: 400;
-  color: #999999; }
+  color: #b3b3b3; }
 
 .hero__secondary > span:first-child {
-  color: #fefefe; }
+  color: #FEFEFE; }
 
 .hero__secondary > span:nth-child(2) {
   margin: 0 1rem; }
@@ -187,8 +187,14 @@ a:visited{
     min-width: 55rem; }
   .navbar--home a {
     color: #FEFEFE; }
+    .navbar--home a:hover {
+      box-shadow: 0 2px 0 #fefefe;
+      transition: box-shadow 0.3s ease-in-out; }
   .navbar--about a {
     color: #636363; }
+    .navbar--about a:hover {
+      box-shadow: 0 2px 0 #636363;
+      transition: box-shadow 0.3s ease-in-out; }
   .navbar__logo {
     float: left;
     transform: translateY(-0.7rem); }
@@ -260,11 +266,8 @@ a:visited{
         line-height: 4.5rem;
         margin-bottom: 1rem; }
       .projects__container .project--description p {
-        background-color: white;
-        padding: 2.5rem;
-        box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
-        .projects__container .project--description p:nth-of-type(2) {
-          box-shadow: -1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+        background-color: #FEFEFE;
+        padding: 2.5rem; }
     .projects__container .project:nth-child(2) {
       display: flex;
       flex-direction: row-reverse; }
@@ -273,11 +276,15 @@ a:visited{
         right: 5rem; }
       .projects__container .project:nth-child(2) .project--description {
         left: 5rem; }
+        .projects__container .project:nth-child(2) .project--description p {
+          box-shadow: -1.5rem 1.5rem 3rem rgba(30, 30, 30, 0.25); }
     .projects__container .project:not(:nth-child(2)) .project--image {
       margin-right: 6rem;
       left: 5rem; }
     .projects__container .project:not(:nth-child(2)) .project--description {
       right: 5rem; }
+      .projects__container .project:not(:nth-child(2)) .project--description p {
+        box-shadow: 1.5rem 1.5rem 3rem rgba(30, 30, 30, 0.25); }
     .projects__container .project:not(:nth-child(2)) h3 {
       text-align: right; }
     .projects__container .project::after {

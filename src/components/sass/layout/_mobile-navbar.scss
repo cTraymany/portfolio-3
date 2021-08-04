@@ -17,7 +17,7 @@
 .mobile__menu {
     position: absolute;
     font-size: 1.6rem;
-    background: #FEFEFE;
+    background: $font-color-white;
     border: solid;
     width: 50rem;
     height: 50rem;
@@ -26,13 +26,13 @@
 
 .navbar--home {
     a{
-        color: #FEFEFE;
+        color: $font-color-white;
     }
 }
 
 .navbar--about {
     a {
-        color: #636363;
+        color: $font-color-grey;
     }
 }
 
