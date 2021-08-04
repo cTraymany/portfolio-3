@@ -1,3 +1,4 @@
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/animations";
@@ -7,11 +8,3 @@
 @import "layout/mobile-navbar";
 @import "layout/navbar";
 @import "layout/projects";
-
-.inactive {
-    display: none;
-}
-
-.active {
-    display: inline-block;
-}

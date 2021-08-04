@@ -18,6 +18,12 @@ body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box; }
 
+.inactive {
+  display: none; }
+
+.active {
+  display: inline-block; }
+
 /* todo: animation transform y on nav and logo on hover */
 /* todo: animation-fill-mode to backwards */
 .hero {
@@ -231,40 +237,49 @@ a:visited{
         position: relative;
     } */ }
 
-@media screen and (min-width: 768px) {
-  .projects__container {
-    font-size: 1.6rem;
-    margin: 3rem; }
-    .projects__container .project {
-      position: relative;
-      background-color: red;
+.projects__container {
+  font-size: 1.6rem;
+  margin: 3rem; }
+  .projects__container .project {
+    max-width: 114rem;
+    margin: 0 auto;
+    margin-top: 10rem; }
+    .projects__container .project--description {
+      z-index: 1; }
+      .projects__container .project--description h3 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin-bottom: 1rem; }
+      .projects__container .project--description p {
+        background-color: white;
+        padding: 2.5rem;
+        box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+        .projects__container .project--description p:nth-of-type(2) {
+          box-shadow: -1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+    .projects__container .project:nth-child(2) {
       display: flex;
-      align-content: space-between; }
-      .projects__container .project:nth-child(2) {
-        flex-direction: row-reverse; }
-        .projects__container .project:nth-child(2) .project__description {
-          position: absolute;
-          left: 0; }
-      .projects__container .project .project__image {
-        width: 50%; }
-        .projects__container .project .project__image img {
-          width: 100%; }
-      .projects__container .project .project__description:nth-of-type(2) h3 {
-        text-align: left; }
-      .projects__container .project .project__description {
-        width: 50%;
-        position: absolute;
-        left: 40rem;
-        top: 50%;
-        transform: translateY(-50%); }
-        .projects__container .project .project__description h3 {
-          text-align: right; }
-        .projects__container .project .project__description p {
-          background-color: #fefefe;
-          box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); } }
-
-.inactive {
-  display: none; }
-
-.active {
-  display: inline-block; }
+      flex-direction: row-reverse; }
+      .projects__container .project:nth-child(2) .project--image {
+        margin-left: 6rem;
+        right: 5rem; }
+      .projects__container .project:nth-child(2) .project--description {
+        left: 5rem; }
+    .projects__container .project:not(:nth-child(2)) .project--image {
+      margin-right: 6rem;
+      left: 5rem; }
+    .projects__container .project:not(:nth-child(2)) .project--description {
+      right: 5rem; }
+    .projects__container .project:not(:nth-child(2)) h3 {
+      text-align: right; }
+    .projects__container .project:not(:last-child) {
+      margin-bottom: 10rem; }
+    .projects__container .project::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .projects__container .project [class^="project--"] {
+      position: relative;
+      width: calc((100% - 6rem) / 2);
+      float: left; }
+      .projects__container .project [class^="project--"] img {
+        width: 100%; }
