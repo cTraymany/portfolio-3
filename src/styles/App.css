@@ -37,6 +37,16 @@ body {
   background-size: cover;
   background-position: top; }
 
+.hero__arrow {
+  margin-top: 5rem;
+  font-size: 5rem;
+  justify-content: center;
+  display: inline-block;
+  transform: rotate(-180deg);
+  font-weight: 100; }
+  .hero__arrow:hover {
+    cursor: pointer; }
+
 .hero__container {
   position: absolute;
   top: 50%;
@@ -54,25 +64,15 @@ body {
   align-items: center; }
 
 .hero__secondary {
+  display: inline-block;
   font-weight: 400;
   color: #999999; }
 
-/* .hero-secondary > span {
-    display: flex;
-    justify-content: space-between;
-} */
 .hero__secondary > span:first-child {
   color: #fefefe; }
 
-.hero__arrow {
-  margin-top: 5rem;
-  font-size: 5rem;
-  justify-content: center;
-  display: flex;
-  transform: rotate(-180deg);
-  font-weight: 100; }
-  .hero__arrow:hover {
-    cursor: pointer; }
+.hero__secondary > span:nth-child(2) {
+  margin: 0 1rem; }
 
 @media screen and (min-width: 667px) {
   .hero__primary {
