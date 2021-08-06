@@ -3,19 +3,44 @@
 // min-height for tiny windows --> activate scroll
 
 .navbar__container {
-    display: block;
-    top: 0;
-    z-index: 1;
     position: absolute;
     width: 100%;
+    top: 0;
+    z-index: 1;
+
     animation: fadeIn 4s ease-out;
+
+    .navbar {
+        margin: 3rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 100%;
+        
+        &--menu {
+            list-style: none;
+            min-width: 46rem;
+            font-size: 1.6rem;
+
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 .navbar--home {
     a{
         color: $font-color-white;
+    }
 
-        &:hover {
+    .navbar--menu {
+        a:hover {
             box-shadow: 0 2px 0 rgba($font-color-white, 1);
             transition: box-shadow 0.3s ease-in-out;
         }
@@ -25,38 +50,12 @@
 .navbar--about {
     a {
         color: $font-color-grey;
+    }
 
-        &:hover {
+    .navbar--menu {
+        a:hover {
             box-shadow: 0 2px 0 rgba($font-color-grey, 1);
             transition: box-shadow 0.3s ease-in-out;
-        }
-    }
-}
-
-.navbar {
-    margin: 3rem;
-    min-width: 55rem;
-
-    &--logo {
-        float: left;
-        transform: translateY(-.7rem);
-    }
-    
-    &--menu {
-        list-style: none;
-        float: right;
-        min-width: 46rem;
-        font-size: 1.6rem;
-        margin: 2rem;
-    
-        li {
-            display: inline-block;
-            margin-left: 3rem;
-            
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-            }
         }
     }
 }
