@@ -1,0 +1,35 @@
+// .about--image //col-1-of-3
+// .about--text // col-2-of-3
+    
+.about {
+    background-color: grey; // todo: testing only
+    
+    font-size: 1.6rem;
+    animation: fadeIn 3.5s ease-out;
+    margin: 10rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
+
+    &--image {
+        flex: 0 0 30%;
+    }
+    
+    &--text {
+        background-color: rgb(177, 60, 18);
+        padding: 5rem;
+        flex: 1;
+        // min-width: 30rem;
+        max-width: 55rem;
+
+        h1 {
+            background-color: yellowgreen;
+            text-align: center;
+
+            margin: 2rem 0;
+        }
+    }
+}

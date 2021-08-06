@@ -2,34 +2,32 @@
 // todo: hamburger and close buttons: cursor pointer
 // min-height for tiny windows --> activate scroll
 
-.navbar__container {
-    position: absolute;
-    width: 100%;
-    top: 0;
+.mobile__navbar__container {
+    display: none;
+}
+
+.navbar {
     z-index: 1;
 
     animation: fadeIn 4s ease-out;
 
-    .navbar {
-        margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 3rem 0 3rem;
+    // flex: 0 0 100%;
+    
+    &--menu {
+        list-style: none;
+        min-width: 46rem;
+        font-size: 1.6rem;
 
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex: 0 0 100%;
-        
-        &--menu {
-            list-style: none;
-            min-width: 46rem;
-            font-size: 1.6rem;
 
-            display: flex;
-            justify-content: space-between;
-
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
         }
     }
 }

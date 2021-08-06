@@ -50,10 +50,32 @@ body {
 .active {
   display: inline-block; }
 
+.about {
+  background-color: grey;
+  font-size: 1.6rem;
+  animation: fadeIn 3.5s ease-out;
+  margin: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
+  .about--image {
+    flex: 0 0 30%; }
+  .about--text {
+    background-color: #b13c12;
+    padding: 5rem;
+    flex: 1;
+    max-width: 55rem; }
+    .about--text h1 {
+      background-color: yellowgreen;
+      text-align: center;
+      margin: 2rem 0; }
+
 .footer {
+  background-color: royalblue;
   font-size: 1.6rem;
   text-align: center;
-  margin: 5rem auto; }
+  margin: 3rem; }
 
 /* todo: animation transform y on nav and logo on hover */
 /* todo: animation-fill-mode to backwards */
@@ -62,6 +84,7 @@ body {
   background-image: url("../images/plants.png");
   background-size: cover;
   background-position: top;
+  margin-top: -9.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,84 +127,29 @@ body {
 /* @media screen and (orientation: portrait) {
     
 } */
-.mobile__navbar {
-  display: block;
-  top: 0;
+.container {
+  display: flex;
+  flex-direction: column; }
+
+.mobile__navbar__container {
+  display: none; }
+
+.navbar {
   z-index: 1;
-  position: absolute;
-  width: 100%;
-  animation: fadeIn 4s ease-out; }
-  .mobile__navbar__container {
-    margin: 3rem;
-    min-width: 55rem; }
-  .mobile__navbar__logo {
-    float: left;
-    transform: translateY(-0.7rem); }
-  .mobile__navbar .mobile__menu.active {
+  animation: fadeIn 4s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 3rem 0 3rem; }
+  .navbar--menu {
+    list-style: none;
+    min-width: 46rem;
     font-size: 1.6rem;
-    height: 100vh;
-    width: 40rem;
-    float: right;
-    animation-name: openMenu;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-    .mobile__navbar .mobile__menu.active::after {
-      content: "";
-      display: table;
-      clear: both; }
-    .mobile__navbar .mobile__menu.active ul {
-      list-style: none;
-      margin-top: 5rem; }
-      .mobile__navbar .mobile__menu.active ul a {
-        display: block;
-        text-decoration: none;
-        padding: 3rem;
-        text-align: center; }
-  .mobile__navbar--about .mobile__menu.active {
-    background: #1E1E1E; }
-    .mobile__navbar--about .mobile__menu.active a {
-      color: #FEFEFE;
-      border-bottom: 0.5px solid #636363; }
-  .mobile__navbar--home .mobile__menu.active {
-    background: #FEFEFE; }
-    .mobile__navbar--home .mobile__menu.active a {
-      color: #1E1E1E;
-      border-bottom: 0.5px solid rgba(30, 30, 30, 0.22); }
-
-.hamburger, .close {
-  float: right;
-  transform: translateY(1rem);
-  z-index: 2; }
-
-@media screen and (max-width: 768px) {
-  .mobile__navbar .mobile__menu.active {
-    width: 25rem; } }
-
-@media screen and (min-width: 1024px) {
-  .mobile__navbar {
-    display: none; } }
-
-.navbar__container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  animation: fadeIn 4s ease-out; }
-  .navbar__container .navbar {
-    margin: 3rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 0 0 100%; }
-    .navbar__container .navbar--menu {
-      list-style: none;
-      min-width: 46rem;
-      font-size: 1.6rem;
-      display: flex;
-      justify-content: space-between; }
-      .navbar__container .navbar--menu a {
-        text-decoration: none;
-        text-transform: uppercase; }
+    justify-content: space-between; }
+    .navbar--menu a {
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .navbar--home a {
   color: #FEFEFE; }
@@ -198,11 +166,11 @@ body {
   transition: box-shadow 0.3s ease-in-out; }
 
 .projects__container {
+  background-color: teal;
   font-size: 1.6rem;
   margin: 3rem; }
   .projects__container .project {
-    max-width: 114rem;
-    margin: 10rem auto; }
+    margin: 10rem; }
     .projects__container .project--description {
       z-index: 1; }
       .projects__container .project--description h3 {
@@ -257,30 +225,3 @@ body {
       float: left; }
       .projects__container .project [class^="project--"] img {
         width: 100%; }
-
-.about__container {
-  animation: fadeIn 3.5s ease-out;
-  font-size: 1.6rem;
-  margin: 15rem; }
-  .about__container .about {
-    max-width: 114rem;
-    background-color: grey;
-    margin: 0 auto;
-    margin-top: 15rem; }
-    .about__container .about--image {
-      width: calc(100% / 3); }
-      .about__container .about--image img {
-        width: 100%; }
-    .about__container .about--text {
-      width: calc(2 * (100% / 3));
-      text-align: center;
-      padding: 5rem;
-      box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25); }
-      .about__container .about--text h1 {
-        margin-bottom: 2.5rem; }
-  .about__container::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .about__container [class^="about--"] {
-    float: left; }

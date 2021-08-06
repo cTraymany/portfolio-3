@@ -4,11 +4,10 @@
 @import "base/animations";
 @import "base/base";
 
-@import "components/footer";
-
+@import "layout/about";
+@import "layout/footer";
 @import "layout/header";
-@import "layout/mobile-navbar";
+@import "layout/layout";
+// @import "layout/mobile-navbar";
 @import "layout/navbar";
 @import "layout/projects";
-
-@import "pages/about"

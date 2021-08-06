@@ -3,12 +3,13 @@
 // todo: min width for media queries
 
 .projects__container {
+    background-color: teal;
     font-size: 1.6rem;
     margin: 3rem;
+    // width: 100%;
     
     .project {
-        max-width: 114rem;
-        margin: 10rem auto;
+        margin: 10rem;
 
         &--description {
             z-index: 1;

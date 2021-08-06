@@ -26,7 +26,7 @@ function App() {
 	}, [location]) // eslint-disable-line
 
   return (
-    <>
+    <div className="container">
       <Navbar location={location} logoColor={logoColor} />
       <MobileNavbar location={location} logoColor={logoColor} />
       <Switch>
@@ -39,7 +39,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </>
+    </div>
   );
 }
 
