@@ -18,7 +18,7 @@ export default function Header() {
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
                     {/* todo: width of arrow needs to be smaller because of hover */}
-                <span onClick={handleClick} className="hero--arrow" >^</span>
+                <span onClick={handleClick} className="hero--arrow" >v</span>
             </div>
         </header>
     )

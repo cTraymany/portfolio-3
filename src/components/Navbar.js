@@ -3,12 +3,12 @@ import { ReactComponent as Logo } from '../images/logo.svg';
 
 function Navbar({ location, logoColor }) {
 	return (
-		<nav className={"navbar " + (location.pathname === "/about" ? "navbar--about" : "navbar--home")}>
-			<div className="navbar__container">
-				<Link to="/" className="navbar__logo">
+		<nav className={"navbar__container " + (location.pathname === "/about" ? "navbar--about" : "navbar--home")}>
+			<div className="navbar">
+				<Link to="/" className="navbar--logo">
 					<Logo fill={logoColor} />
 				</Link>
-				<ul className="navbar__menu">
+				<ul className="navbar--menu">
 					<li className="navbar__item">
 						<Link to="/" className="navbar__link" >
 							Home

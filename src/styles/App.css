@@ -1,3 +1,15 @@
+@keyframes bounce {
+  0% {
+    transform: translate(0); }
+  25% {
+    transform: translateY(1rem); }
+  50% {
+    transform: translate(0); }
+  75% {
+    transform: translateY(1rem); }
+  100% {
+    transform: translate(0); } }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -82,12 +94,12 @@ body {
         margin: 0 1rem; }
     .hero__container .hero--arrow {
       position: relative;
+      top: 5rem;
       font-size: 5rem;
-      font-weight: 100;
-      transform: rotate(-180deg);
-      top: 5rem; }
+      font-weight: 100; }
       .hero__container .hero--arrow:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        animation: bounce 1s ease-in-out; }
 
 /* @media screen and (orientation: portrait) {
     
@@ -149,17 +161,13 @@ body {
   .mobile__navbar {
     display: none; } }
 
-.navbar {
+.navbar__container {
   display: block;
   top: 0;
   z-index: 1;
   position: absolute;
   width: 100%;
   animation: fadeIn 4s ease-out; }
-
-.navbar__container {
-  margin: 3rem;
-  min-width: 55rem; }
 
 .navbar--home a {
   color: #FEFEFE; }
@@ -173,22 +181,24 @@ body {
     box-shadow: 0 2px 0 #636363;
     transition: box-shadow 0.3s ease-in-out; }
 
-.navbar__logo {
-  float: left;
-  transform: translateY(-0.7rem); }
-
-.navbar__menu {
-  list-style: none;
-  float: right;
-  min-width: 46rem;
-  font-size: 1.6rem;
-  margin: 2rem; }
-  .navbar__menu li {
-    display: inline-block;
-    margin-left: 3rem; }
-    .navbar__menu li a {
-      text-decoration: none;
-      text-transform: uppercase; }
+.navbar {
+  margin: 3rem;
+  min-width: 55rem; }
+  .navbar--logo {
+    float: left;
+    transform: translateY(-0.7rem); }
+  .navbar--menu {
+    list-style: none;
+    float: right;
+    min-width: 46rem;
+    font-size: 1.6rem;
+    margin: 2rem; }
+    .navbar--menu li {
+      display: inline-block;
+      margin-left: 3rem; }
+      .navbar--menu li a {
+        text-decoration: none;
+        text-transform: uppercase; }
 
 .projects__container {
   font-size: 1.6rem;

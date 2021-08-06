@@ -2,59 +2,53 @@
 // todo: hamburger and close buttons: cursor pointer
 // min-height for tiny windows --> activate scroll
 
-// .navbar {
-//     display: none;
-// }
+.navbar__container {
+    display: block;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    animation: fadeIn 4s ease-out;
+}
 
-// @media screen and (min-width: $breakpoint-desktop) {
-    .navbar {
-        display: block;
-        top: 0;
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        animation: fadeIn 4s ease-out;
-    }
-    
-    .navbar__container {
-        margin: 3rem;
-        min-width: 55rem;
-    }
-    
-    .navbar--home {
-        a{
-            color: $font-color-white;
+.navbar--home {
+    a{
+        color: $font-color-white;
 
-            &:hover {
-                box-shadow: 0 2px 0 rgba($font-color-white, 1);
-                transition: box-shadow 0.3s ease-in-out;
-            }
+        &:hover {
+            box-shadow: 0 2px 0 rgba($font-color-white, 1);
+            transition: box-shadow 0.3s ease-in-out;
         }
     }
-    
-    .navbar--about {
-        a {
-            color: $font-color-grey;
+}
 
-            &:hover {
-                box-shadow: 0 2px 0 rgba($font-color-grey, 1);
-                transition: box-shadow 0.3s ease-in-out;
-            }
+.navbar--about {
+    a {
+        color: $font-color-grey;
+
+        &:hover {
+            box-shadow: 0 2px 0 rgba($font-color-grey, 1);
+            transition: box-shadow 0.3s ease-in-out;
         }
     }
+}
 
-    .navbar__logo {
+.navbar {
+    margin: 3rem;
+    min-width: 55rem;
+
+    &--logo {
         float: left;
         transform: translateY(-.7rem);
     }
-
-    .navbar__menu {
+    
+    &--menu {
         list-style: none;
         float: right;
         min-width: 46rem;
         font-size: 1.6rem;
         margin: 2rem;
-
+    
         li {
             display: inline-block;
             margin-left: 3rem;
@@ -65,4 +59,4 @@
             }
         }
     }
-// }
+}

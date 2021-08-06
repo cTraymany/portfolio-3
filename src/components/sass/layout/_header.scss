@@ -54,14 +54,14 @@
 
         &--arrow {
             position: relative;
+            top: 5rem;
 
             font-size: 5rem;
             font-weight: 100;
-            transform: rotate(-180deg);
-            top: 5rem;
         
             &:hover {
                 cursor: pointer;
+                animation: bounce 1s ease-in-out;
             }
         }
     }
