@@ -129,8 +129,8 @@ body {
     transform: translateY(-0.7rem); }
   .mobile__navbar .mobile__menu.active {
     font-size: 1.6rem;
-    height: 90vh;
-    width: 40vw;
+    height: 100vh;
+    width: 40rem;
     float: right;
     animation-name: openMenu;
     animation-duration: 1s;
@@ -140,26 +140,32 @@ body {
       display: table;
       clear: both; }
     .mobile__navbar .mobile__menu.active ul {
-      list-style: none; }
+      list-style: none;
+      margin-top: 5rem; }
       .mobile__navbar .mobile__menu.active ul a {
         display: block;
         text-decoration: none;
-        margin: 3rem 3rem;
+        padding: 3rem;
         text-align: center; }
   .mobile__navbar--about .mobile__menu.active {
     background: #1E1E1E; }
     .mobile__navbar--about .mobile__menu.active a {
       color: #FEFEFE;
-      border-bottom: 1px solid #636363; }
+      border-bottom: 0.5px solid #636363; }
   .mobile__navbar--home .mobile__menu.active {
     background: #FEFEFE; }
     .mobile__navbar--home .mobile__menu.active a {
       color: #1E1E1E;
-      border-bottom: 1px solid #b3b3b3; }
+      border-bottom: 0.5px solid rgba(30, 30, 30, 0.22); }
 
 .hamburger, .close {
   float: right;
-  transform: translateY(1rem); }
+  transform: translateY(1rem);
+  z-index: 2; }
+
+@media screen and (max-width: 768px) {
+  .mobile__navbar .mobile__menu.active {
+    width: 25rem; } }
 
 @media screen and (min-width: 1024px) {
   .mobile__navbar {

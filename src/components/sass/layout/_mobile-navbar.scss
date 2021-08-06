@@ -20,8 +20,8 @@
 
     .mobile__menu.active {
         font-size: 1.6rem;
-        height: 90vh;
-        width: 40vw;
+        height: 100vh;
+        width: 40rem;
         float: right;
 
         @include clearfix;
@@ -32,11 +32,12 @@
 
         ul {
             list-style: none;
+            margin-top: 5rem; //todo: testing
 
             a {
                 display: block;
                 text-decoration: none;
-                margin: 3rem 3rem;
+                padding: 3rem;
                 text-align: center;
             }
         }
@@ -48,7 +49,7 @@
 
             a {
                 color: $font-color-white;
-                border-bottom: 1px solid $font-color-grey;
+                border-bottom: 0.5px solid $font-color-grey;
             }
         }
     }
@@ -59,7 +60,7 @@
 
             a {
                 color: $font-color-black;
-                border-bottom: 1px solid $font-color-grey-light;
+                border-bottom: 0.5px solid rgba($font-color-black, 0.22);
             }
         }
     }
@@ -68,6 +69,7 @@
 .hamburger, .close {
     float: right;
     transform: translateY(1rem);
+    z-index: 2;
 }
 
 // .mobile__menu.inactive {
@@ -108,6 +110,14 @@
 //         }
 //     }
 // }
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .mobile__navbar {
+        .mobile__menu.active {
+            width: 25rem;
+        }
+    }
+}
 
 @media screen and (min-width: $breakpoint-desktop) {
     .mobile__navbar {
