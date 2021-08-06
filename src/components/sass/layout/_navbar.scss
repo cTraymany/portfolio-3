@@ -2,11 +2,11 @@
 // todo: hamburger and close buttons: cursor pointer
 // min-height for tiny windows --> activate scroll
 
-.navbar {
-    display: none;
-}
+// .navbar {
+//     display: none;
+// }
 
-@media screen and (min-width: $breakpoint-desktop) {
+// @media screen and (min-width: $breakpoint-desktop) {
     .navbar {
         display: block;
         top: 0;
@@ -65,4 +65,4 @@
             }
         }
     }
-}
+// }
