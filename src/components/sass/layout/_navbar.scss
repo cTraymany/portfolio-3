@@ -43,6 +43,29 @@
             transition: box-shadow 0.3s ease-in-out;
         }
     }
+
+    // .navbar--menu {
+    //     .navbar__item {
+    //         position: relative;
+    //     }
+
+    //     a::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         width: 3px;
+    //         background-color: white;
+    //         transform: scaleX(0);
+    //         transition: transform 1s;
+    //     }
+
+    //     a:hover::after {
+    //         transform: scaleX(1)
+    //     }
+    // }
+
 }
 
 .navbar--about {
