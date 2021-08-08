@@ -3,20 +3,20 @@ import { ReactComponent as GithubLogo } from '../images/github.svg';
 export default function ProjectCard({project}) {
     return(
         <div className="project">
-            <div className="project--image">
+            <figure className="project__image">
                 <img src={project.image} alt={project.alt} />
-            </div>
-            <div className="project--description">
-                <h3>{project.title}</h3>
-                <div className="u-box-shadow">
-                    <p>{project.description}</p>
-                    <div className="project-card-footer">
-                        <ul>
+            </figure>
+            <div className="project__box">
+                <h3 className="project__box--title">{project.title}</h3>
+                <div className="project__body">
+                    <p className="project__body--description">{project.description}</p>
+                    <div className="project__footer">
+                        <ul className="project__footer--languages">
                             {project.languages.map(language => 
-                                <li key={`${language}${project.id}`}>{language}</li>
+                                <li className="project__footer--language" key={`${language}${project.id}`}>{language}</li>
                             )}
                         </ul>
-                        <a href={project.github} target="blank">
+                        <a className="project__footer--github" href={project.github} target="blank">
                             <GithubLogo />
 						</a>
                     </div>
