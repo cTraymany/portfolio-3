@@ -1,0 +1,110 @@
+/* todo: animation transform y on nav and logo on hover */
+/* todo: animation-fill-mode to backwards */
+
+.hero__container {
+    height: 100vh;
+    background-image: url('../images/plants.png');
+    background-size: cover;
+    background-position: top;
+    margin-top: -9.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+
+    .hero {
+        color: $font-color-white;
+        animation: fadeIn 4s ease-out;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--primary {
+            font-family: 'Playfair Display';
+            font-size: 8rem;
+            font-weight: 400;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 100%;
+        }
+        
+        &--secondary {
+            font-family: 'Montserrat';
+            font-weight: 400;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 100%;
+
+            & > span:not(:first-child) {
+                color: $font-color-grey-light;
+            }
+
+            & > span:nth-child(2) {
+                margin: 0 1rem;
+            }
+        }
+        
+
+        &--arrow {
+            position: relative;
+            top: 5rem;
+
+            font-size: 5rem;
+            font-weight: 100;
+        
+            animation: bounce 3s ease-in-out infinite;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 667px){
+//     .hero__primary {
+//         font-size: 4.5rem;
+//         font-weight: 400;
+//     }
+
+//     .hero__secondary {
+//         font-size: 1.6rem;
+//         font-style: normal;
+//         justify-content: center;
+//     }
+// }
+
+// @media screen and (min-width: 768px){
+//     .hero__primary {
+//         font-size: 8rem;
+//         font-weight: 400;
+//         height: 10.7rem;
+//         min-width: 82rem;
+        
+//     }
+
+//     .hero__secondary >span:first-child {
+//         font-weight: 700;
+//     }
+
+//     .hero__secondary {
+//         font-size: 2.8rem;
+//         font-style: normal;
+//         display: flex;
+//         justify-content: center;
+
+//     }
+// }
+
+
+/* @media screen and (orientation: portrait) {
+    
+} */

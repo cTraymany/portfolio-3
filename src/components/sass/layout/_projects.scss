@@ -1,0 +1,100 @@
+// todo: set background colors background-color: #fefefe;
+// todo: clean code
+// todo: min width for media queries
+
+.projects__container {
+    // background-color: teal;
+    font-size: 1.6rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project {
+    // background-color: tomato;
+    margin: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 102rem;
+
+    .project__image {
+        width: 50%;
+        margin-right: -5rem;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .project__box {
+        // background-color: turquoise;
+        width: calc(50% + 5rem);
+
+        &--title {
+            font-size: 3rem;
+            line-height: 4.5rem;
+            margin-bottom: 1rem;
+            text-align: right;
+        }
+    }
+
+    .project__body {
+        box-shadow: 1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
+        background-color: $font-color-white;
+        padding: 2.5rem;
+
+        &--description {
+            z-index: 1;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .project__footer {
+        // background-color: rgb(110, 102, 102);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $font-color-grey;
+
+        &--languages {
+            // background-color: salmon;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--language {
+            // background-color: seagreen;
+            margin-right: 2rem;
+            list-style: none;
+
+            border: 1px solid $font-color-grey;
+            padding: .3rem 1rem;
+        }
+    }
+}
+
+.project:nth-child(2) {
+    flex-direction: row-reverse;
+
+    .project__image {
+        margin-right: 0;
+        margin-left: -5rem;
+    }
+
+    .project__box {
+        &--title {
+            text-align: left;
+        }
+    }
+
+    .project__body {
+        box-shadow: -1.5rem 1.5rem 3rem rgba($font-color-black, 0.25);
+    }
+}

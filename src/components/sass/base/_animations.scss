@@ -1,0 +1,53 @@
+@keyframes bounce {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translateY(1rem);
+    }
+    
+    20% {
+        transform: translate(0);
+    }
+
+    30% {
+        transform: translateY(1rem);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+    
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes openMenu {
+    0% {
+        transform: translateX(10rem); }
+    100% {
+        transform: translate(0); }
+}
+
+// todo: below doesn't work because menu close changes display to inactive
+@keyframes closeMenu {
+    100% {
+        display: inline-block;
+        transform: translateX(10rem); }
+    0% {
+        transform: translate(0);
+        display: none;
+    }
+}

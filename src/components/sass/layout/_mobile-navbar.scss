@@ -1,0 +1,126 @@
+// todo: if click outside the screen, mobile menu display = none
+
+.mobile__navbar {
+    display: block;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    animation: fadeIn 4s ease-out;
+
+    &__container {
+        margin: 3rem;
+        min-width: 55rem;
+    }
+    
+    &__logo {
+        float: left;
+        transform: translateY(-.7rem);
+    }
+
+    .mobile__menu.active {
+        font-size: 1.6rem;
+        height: 100vh;
+        width: 40rem;
+        float: right;
+
+        @include clearfix;
+    
+        animation-name: openMenu;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        ul {
+            list-style: none;
+            margin-top: 5rem; //todo: testing
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 3rem;
+                text-align: center;
+            }
+        }
+    }
+
+    &--about {
+        .mobile__menu.active {
+            background: $font-color-black;
+
+            a {
+                color: $font-color-white;
+                border-bottom: 0.5px solid $font-color-grey;
+            }
+        }
+    }
+
+    &--home {
+        .mobile__menu.active {
+            background: $font-color-white;
+
+            a {
+                color: $font-color-black;
+                border-bottom: 0.5px solid rgba($font-color-black, 0.22);
+            }
+        }
+    }
+}
+
+.hamburger, .close {
+    float: right;
+    transform: translateY(1rem);
+    z-index: 2;
+}
+
+// .mobile__menu.inactive {
+//     // display: inline-block;
+//     @include clearfix;
+
+//     animation-name: closeMenu;
+//     animation-duration: 1s;
+//     animation-timing-function: ease-out;
+// }
+
+// ------------------------->
+// .navbar__menu {
+    //     list-style: none;
+//     float: right;
+//     min-width: 46rem;
+//     font-size: 1.6rem;
+// }
+
+// .navbar--home {
+//     a{
+//         color: $font-color-white;
+
+//         &:hover {
+//             box-shadow: 0 2px 0 rgba($font-color-white, 1);
+//             transition: box-shadow 0.3s ease-in-out;
+//         }
+//     }
+// }
+
+// .navbar--about {
+//     a {
+//         color: $font-color-grey;
+
+//         &:hover {
+//             box-shadow: 0 2px 0 rgba($font-color-grey, 1);
+//             transition: box-shadow 0.3s ease-in-out;
+//         }
+//     }
+// }
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .mobile__navbar {
+        .mobile__menu.active {
+            width: 25rem;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .mobile__navbar {
+        display: none;
+    }
+}
