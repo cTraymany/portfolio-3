@@ -1,7 +1,7 @@
 /* todo: animation transform y on nav and logo on hover */
 /* todo: animation-fill-mode to backwards */
 
-.hero__container {
+.header {
     height: 100vh;
     background-image: url('../images/plants.png');
     background-size: cover;
@@ -21,45 +21,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
 
-        &--primary {
+        &__primary {
             font-family: 'Playfair Display';
             font-size: 8rem;
             font-weight: 400;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 0 0 100%;
+            margin-bottom: 2rem;
         }
         
-        &--secondary {
+        &__secondary {
             font-family: 'Montserrat';
+            font-size: 2.8rem;
             font-weight: 400;
 
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex: 0 0 100%;
+            align-self: stretch;
+
+            & > span:first-child {
+                font-weight: 700;
+            }
 
             & > span:not(:first-child) {
                 color: $font-color-grey-light;
             }
-
-            & > span:nth-child(2) {
-                margin: 0 1rem;
-            }
         }
         
 
-        &--arrow {
+        &__arrow {
             position: relative;
             top: 5rem;
-
             font-size: 5rem;
             font-weight: 100;
-        
             animation: bounce 3s ease-in-out infinite;
 
             &:hover {

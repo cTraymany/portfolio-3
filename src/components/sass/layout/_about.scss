@@ -1,9 +1,5 @@
-// .about--image //col-1-of-3
-// .about--text // col-2-of-3
-    
 .about {
     // background-color: grey; // todo: testing only
-    
     font-size: 1.6rem;
     animation: fadeIn 3.5s ease-out;
     margin: 5rem auto;
@@ -18,7 +14,6 @@
 
     &__image {
         flex: 0 0 30%;
-
         // todo: image to fill box completely
     }
     

@@ -1,5 +1,4 @@
-// todo: set background colors background-color: #fefefe;
-// todo: clean code
+// todo: clean code folders
 // todo: min width for media queries
 
 .projects__container {
@@ -15,7 +14,7 @@
 
 .project {
     // background-color: tomato;
-    margin: 3rem;
+    margin: 8rem 3rem;
 
     display: flex;
     align-items: center;
@@ -52,6 +51,8 @@
         &--description {
             z-index: 1;
             margin-bottom: 2.5rem;
+            line-height: 2.2rem;
+            text-align: justify;
         }
     }
 

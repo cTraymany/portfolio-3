@@ -8,17 +8,16 @@ export default function Header() {
     }
 
     return (
-        <header className="hero__container">
+        <header className="header">
             <div className="hero">
-                <h1 className="hero--primary">Chindalath Traymany</h1>
-                <h2 className="hero--secondary">
+                <h1 className="hero__primary">Chindalath Traymany</h1>
+                <h2 className="hero__secondary">
                     <span>Fullstack Engineer</span>
-                    {/* todo: the css for the pipe is weird, fix that */}
                     <span> | </span>
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
-                    {/* todo: width of arrow needs to be smaller because of hover */}
-                <span onClick={handleClick} className="hero--arrow" >v</span>
+                {/* todo: change arrow to an icon instead of v (for screenreaders) */}
+                <div onClick={handleClick} className="hero__arrow" >v</div>
             </div>
         </header>
     )

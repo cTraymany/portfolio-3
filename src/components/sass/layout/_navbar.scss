@@ -2,11 +2,11 @@
 // todo: hamburger and close buttons: cursor pointer
 // min-height for tiny windows --> activate scroll
 
-.mobile__navbar__container {
+.mobile-navbar__container {
     display: none;
 }
 
-.navbar {
+.navbar__container {
     // background-color: seagreen;
     z-index: 1;
 
@@ -15,69 +15,69 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 3rem 0 3rem;
+    margin: 3rem 5rem 0 5rem;
     // flex: 0 0 100%;
     
-    &--menu {
+    .navbar__menu {
         list-style: none;
         min-width: 46rem;
         font-size: 1.6rem;
-
+    
         display: flex;
         justify-content: space-between;
-
-        a {
+    
+        &--link {
             text-decoration: none;
             text-transform: uppercase;
         }
     }
-}
-
-.navbar--home {
-    a{
-        color: $font-color-white;
-    }
-
-    .navbar--menu {
-        a:hover {
-            box-shadow: 0 2px 0 rgba($font-color-white, 1);
-            transition: box-shadow 0.3s ease-in-out;
+    
+    &--about {
+        .navbar__menu {
+            &--item:hover {
+                box-shadow: 0 2px 0 rgba($font-color-grey, 1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+        
+            &--link {
+                color: $font-color-grey;
+            }
         }
     }
-
-    // .navbar--menu {
-    //     .navbar__item {
-    //         position: relative;
-    //     }
-
-    //     a::after {
-    //         content: "";
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         width: 3px;
-    //         background-color: white;
-    //         transform: scaleX(0);
-    //         transition: transform 1s;
-    //     }
-
-    //     a:hover::after {
-    //         transform: scaleX(1)
-    //     }
-    // }
-
-}
-
-.navbar--about {
-    a {
-        color: $font-color-grey;
-    }
-
-    .navbar--menu {
-        a:hover {
-            box-shadow: 0 2px 0 rgba($font-color-grey, 1);
-            transition: box-shadow 0.3s ease-in-out;
+    
+    &--home {
+        .navbar__menu {
+            &--item:hover {
+                box-shadow: 0 2px 0 rgba($font-color-white, 1);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+    
+            &--link {
+                color: $font-color-white;
+            }
         }
+    
+        // .navbar--menu {
+        //     .navbar__item {
+        //         position: relative;
+        //     }
+    
+        //     a::after {
+        //         content: "";
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //         width: 100%;
+        //         width: 3px;
+        //         background-color: white;
+        //         transform: scaleX(0);
+        //         transition: transform 1s;
+        //     }
+    
+        //     a:hover::after {
+        //         transform: scaleX(1)
+        //     }
+        // }
+    
     }
 }
