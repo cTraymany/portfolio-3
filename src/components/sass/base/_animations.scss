@@ -36,7 +36,8 @@
 
 @keyframes openMenu {
     0% {
-        transform: translateX(10rem); }
+        transform: translateX(100rem); }
+
     100% {
         transform: translate(0); }
 }
@@ -45,9 +46,9 @@
 @keyframes closeMenu {
     100% {
         display: inline-block;
-        transform: translateX(10rem); }
+        transform: translateX(150rem); }
     0% {
-        transform: translate(0);
         display: none;
+        transform: translate(0);
     }
 }
