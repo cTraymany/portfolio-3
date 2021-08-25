@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="container">
       <Navbar location={location} logoColor={logoColor} />
-      <MobileNavbar location={location} logoColor={logoColor} />
+      <MobileNavbar location={location} />
       <Switch>
         <Route path="/about" exact>
           <About />
