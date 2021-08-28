@@ -1,10 +1,10 @@
-import about_me from '../images/about_me.png'
+// import hero from '../images/hero.jpg'
 
 export default function About() {
     return (
         <div className="u-align">    
             <main className="about">
-                <img src={about_me} alt="Chindalath and her cat" className="about__image" />
+                {/* <img src={hero} alt="Chindalath and her cat" className="about__image" /> */}
                 <div className="about__text">
                     <h1 className="about__text--primary">Hi! I'm Chindalath :)</h1>
                     <p className="about__text--secondary">I am a Laotian-American woman, a software developer, and a lifelong learner.</p><br />
