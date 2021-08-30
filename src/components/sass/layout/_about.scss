@@ -92,19 +92,12 @@
         }
 
         &__text {
+            display: flex; 
             padding-bottom: 0;
 
-            & p:first-child {
-                // background-color: orange;
-                margin-right: 2rem;
-            }
+            column-count: 2;
+            column-gap: 4rem;
 
-            & p:last-child {
-                // background-color: green;
-                margin-left: 2rem;
-            }
-
-            display: flex; 
         }
 
         &__heading--mobile {
@@ -128,13 +121,7 @@
         &__text {
             display: block;
             
-            & p:first-child {
-                margin-right: 0;
-            }
-
-            & p:last-child {
-                margin-left: 0;
-            }
+            column-count: 1;
         }
     }
 }

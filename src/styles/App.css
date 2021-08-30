@@ -119,12 +119,10 @@ body {
         flex-direction: column;
         align-items: center; }
       .about__text {
+        display: flex;
         padding-bottom: 0;
-        display: flex; }
-        .about__text p:first-child {
-          margin-right: 2rem; }
-        .about__text p:last-child {
-          margin-left: 2rem; }
+        column-count: 2;
+        column-gap: 4rem; }
       .about__heading--mobile {
         display: flex;
         justify-content: center;
@@ -137,11 +135,8 @@ body {
     .about__right {
       padding: 2rem 4rem; }
     .about__text {
-      display: block; }
-      .about__text p:first-child {
-        margin-right: 0; }
-      .about__text p:last-child {
-        margin-left: 0; } }
+      display: block;
+      column-count: 1; } }
 
 .footer {
   font-size: 1.6rem;
