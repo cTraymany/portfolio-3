@@ -13,11 +13,11 @@ export default function Header() {
                 <h1 className="hero__primary">Chindalath Traymany</h1>
                 <h2 className="hero__secondary">
                     <span>Fullstack Engineer</span>
-                    <span> | </span>
+                    <span> &#124; </span>
                     <span>Ruby, Rails, JavaScript, React.js</span>
                 </h2>
                 {/* todo: change arrow to an icon instead of v (for screenreaders) */}
-                <a href="#projects" className="hero__arrow" >v</a>
+                <a href="#projects" className="hero__arrow" >&#118;</a>
             </div>
         </header>
     )
