@@ -95,8 +95,13 @@
             display: flex; 
             padding-bottom: 0;
 
+            -moz-column-count: 2;
+            -moz-column-gap: 4rem;
+            // -moz-column-rule: 1px solid $font-color-black;
+            // -webkit-column-rule: 1px solid $font-color-black;
             column-count: 2;
             column-gap: 4rem;
+            // column-rule: 1px solid $font-color-black;
 
         }
 
@@ -121,6 +126,7 @@
         &__text {
             display: block;
             
+            -moz-column-count: 1;
             column-count: 1;
         }
     }

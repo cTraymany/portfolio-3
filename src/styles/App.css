@@ -121,6 +121,8 @@ body {
       .about__text {
         display: flex;
         padding-bottom: 0;
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
         column-count: 2;
         column-gap: 4rem; }
       .about__heading--mobile {
@@ -136,6 +138,7 @@ body {
       padding: 2rem 4rem; }
     .about__text {
       display: block;
+      -moz-column-count: 1;
       column-count: 1; } }
 
 .footer {
