@@ -87,3 +87,11 @@
         }
     }
 }
+
+.navbar__logo {
+    svg {
+        @include respond(tab-port) {
+            fill: $font-color-white;
+        }
+    }
+}

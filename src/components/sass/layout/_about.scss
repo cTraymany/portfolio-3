@@ -1,50 +1,191 @@
 .about {
-    // background-color: grey; // todo: testing only
-    font-size: 1.6rem;
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+
     animation: fadeIn 3.5s ease-out;
-    // margin: 5rem auto;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
-
-    max-width: 100rem;
-
-    // &__image {
-        // flex: 0 0 30%;
-    // }
+    max-width: 180rem;
     
+    &__content {
+        width: 75%;
+        background-color: $font-color-white;
+        box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__left {
+        width: 33.3333333%;
+        background-image: url('../images/hero.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__right {
+        width: 66.666666%;
+        padding: 3rem 5rem;
+    }
+
     &__text {
-        padding: 0 5rem;
-        // flex: 1;
-        max-height: 60rem;
-        overflow: scroll;
-        
-        &--primary {
-            // background-color: rgb(127, 129, 122);
-            text-align: center;
-            margin: 2rem 0;
-        }
-        
-        &--secondary {
-            text-align: justify;
+        font-size: 1.8rem;
+        text-align: justify;
+
+        p {
+            padding-bottom: 3rem;
         }
     }
 
-    @include respond(tab-port) {
-        // max-width: 80rem;
+    &__heading {
+        font-family: 'Roboto';
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 3rem 0 0 0;
+
+        &--mobile {
+            display: none;
+        }
+    }
+
+    @include respond (tab-port) {
+        // background-color: blue;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        &__content {
+            width: 100%;
+            // background-color: grey;
+            box-shadow: none;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__left {
+            width: 100%;
+            height: 100vh;
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__right {
+            width: 100%;
+            padding: 3rem 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            padding-bottom: 0;
+
+            & p:first-child {
+                // background-color: orange;
+                margin-right: 2rem;
+            }
+
+            & p:last-child {
+                // background-color: green;
+                margin-left: 2rem;
+            }
+
+            display: flex; 
+        }
+
+        &__heading--mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 8rem;
+            font-family: "Playfair Display";
+            font-weight: 400;
+            color: $font-color-white;
+        }
+    }
+
+    @include respond(phone) {
+
+        &__right {
+            padding: 2rem 4rem;
+        }
+
+        &__text {
+            display: block;
+            
+            & p:first-child {
+                margin-right: 0;
+            }
+
+            & p:last-child {
+                margin-left: 0;
+            }
+        }
     }
 }
 
-.u-align {
-    // background-color: seagreen;
-    margin-top: 12rem;
+// .about {
+//     // background-color: grey; // todo: testing only
+//     font-size: 1.6rem;
+//     animation: fadeIn 3.5s ease-out;
+//     // margin: 5rem auto;
+    
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//     box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
 
-    padding: 5rem;
-}
+
+//     // &__image {
+//         // flex: 0 0 30%;
+//     // }
+    
+    
+//     &__text {
+//         padding: 0 5rem;
+//         // flex: 1;
+//         max-height: 60rem;
+//         overflow: scroll;
+        
+//         &--primary {
+//             // background-color: rgb(127, 129, 122);
+//             text-align: center;
+//             margin: 2rem 0;
+//         }
+        
+//         &--secondary {
+//             text-align: justify;
+//         }
+//     }
+
+//     @include respond(tab-port) {
+//         // max-width: 80rem;
+//     }
+// }
+
+// .u-align {
+//     // background-color: seagreen;
+//     margin-top: 12rem;
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     padding: 5rem;
+// }

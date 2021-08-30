@@ -10,7 +10,7 @@
     &__button {
         height: 7rem;
         width: 7rem;
-        position: fixed;
+        position: absolute;
         top: 4rem;
         right: 4rem;
         z-index: 2000;
@@ -81,16 +81,16 @@
 
     // ICON
 
-    &--about &__icon {
-        &,
-        &::before,
-        &::after {
-            width: 3rem;
-            height: 2px;
-            background-color: $font-color-grey-dark;
-            display: inline-block;
-        }
-    }
+    // &--about &__icon {
+    //     &,
+    //     &::before,
+    //     &::after {
+    //         width: 3rem;
+    //         height: 2px;
+    //         background-color: $font-color-grey-dark;
+    //         display: inline-block;
+    //     }
+    // }
 
     &__icon {
         position: relative;
