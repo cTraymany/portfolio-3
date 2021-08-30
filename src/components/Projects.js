@@ -32,7 +32,7 @@ export default function Projects() {
 
 
     return(
-        <div className="projects__container">
+        <div className="projects__container" id="projects">
             {projects.map(project => <ProjectCard key={project.image} project={project}/>)}
         </div>
     )

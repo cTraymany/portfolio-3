@@ -95,6 +95,9 @@
             font-weight: 100;
             animation: bounce 3s ease-in-out infinite;
 
+            text-decoration: none;
+            color: $font-color-white;
+
             &:hover {
                 cursor: pointer;
             }

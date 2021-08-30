@@ -34,21 +34,22 @@
     }
 }
 
-@keyframes openMenu {
-    0% {
-        transform: translateX(100rem); }
+// @keyframes openMenu {
+//     0% {
+//         transform: translateX(100rem); }
 
-    100% {
-        transform: translate(0); }
-}
+//     100% {
+//         transform: translate(0); }
+// }
 
 // todo: below doesn't work because menu close changes display to inactive
-@keyframes closeMenu {
-    100% {
-        display: inline-block;
-        transform: translateX(150rem); }
-    0% {
-        display: none;
-        transform: translate(0);
-    }
-}
+// @keyframes closeMenu {
+//     100% {
+//         display: inline-block;
+//         transform: translateX(150rem); }
+//     0% {
+//         opacity: 0;
+//         visibility: hidden;
+//         transform: translate(0);
+//     }
+// }

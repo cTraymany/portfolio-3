@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @include respond(big-desktop) {
         font-size: 75%; // 1rem = 12px; 12px/16px = 75%
