@@ -1,4 +1,5 @@
 import { ReactComponent as GithubLogo } from '../images/github.svg';
+import { ReactComponent as WebLogo } from '../images/web.svg';
 
 export default function ProjectCard({project}) {
     return(
@@ -16,9 +17,14 @@ export default function ProjectCard({project}) {
                                 <li className="project__footer--language" key={`${language}${project.id}`}>{language}</li>
                             )}
                         </ul>
-                        <a className="project__footer--github" href={project.github} target="blank">
-                            <GithubLogo />
-						</a>
+                        <ul className="project__footer--icons">
+                            <a href={project.github} target="blank">
+                                <GithubLogo />
+                            </a>
+                            <a href={project.website} target="blank">
+                                <WebLogo />
+                            </a>
+                        </ul>
                     </div>
                 </div>
             </div>

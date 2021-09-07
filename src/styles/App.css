@@ -75,8 +75,8 @@ body {
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-align: center;
-    padding: 3rem 0 0 0; }
+    margin-top: 3rem;
+    text-align: center; }
     .about__heading--mobile {
       display: none; }
   @media (max-width: 56.25em) {
@@ -417,6 +417,17 @@ body {
       list-style: none;
       border: 1px solid #636363;
       padding: .3rem 1rem; }
+    .project .project__footer--icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .project .project__footer--icons a {
+      margin-left: 1rem;
+      list-style: none;
+      height: 2.8rem;
+      width: 2.8rem;
+      display: flex;
+      align-items: center; }
   @media (max-width: 56.25em) {
     .project {
       flex-direction: column;

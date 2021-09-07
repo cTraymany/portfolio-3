@@ -46,8 +46,9 @@
         font-size: 3.2rem;
         font-weight: 700;
         margin-bottom: 2rem;
+        margin-top: 3rem;
         text-align: center;
-        padding: 3rem 0 0 0;
+        // padding: 3rem 0 0 0;
 
         &--mobile {
             display: none;
@@ -131,54 +132,3 @@
         }
     }
 }
-
-// .about {
-//     // background-color: grey; // todo: testing only
-//     font-size: 1.6rem;
-//     animation: fadeIn 3.5s ease-out;
-//     // margin: 5rem auto;
-    
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     box-shadow: 1.5rem 1.5rem 3rem rgba(0, 0, 0, 0.25);
-
-
-//     // &__image {
-//         // flex: 0 0 30%;
-//     // }
-    
-    
-//     &__text {
-//         padding: 0 5rem;
-//         // flex: 1;
-//         max-height: 60rem;
-//         overflow: scroll;
-        
-//         &--primary {
-//             // background-color: rgb(127, 129, 122);
-//             text-align: center;
-//             margin: 2rem 0;
-//         }
-        
-//         &--secondary {
-//             text-align: justify;
-//         }
-//     }
-
-//     @include respond(tab-port) {
-//         // max-width: 80rem;
-//     }
-// }
-
-// .u-align {
-//     // background-color: seagreen;
-//     margin-top: 12rem;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     padding: 5rem;
-// }

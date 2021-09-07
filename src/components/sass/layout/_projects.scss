@@ -114,6 +114,23 @@
             border: 1px solid $font-color-grey;
             padding: .3rem 1rem;
         }
+
+        &--icons {
+            // background-color: salmon;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--icons a {
+            // background-color: seagreen;
+            margin-left: 1rem;
+            list-style: none;
+            height: 2.8rem;
+            width: 2.8rem;
+            display: flex;
+            align-items: center;
+        }
     }
 
     @include respond(tab-port) {
