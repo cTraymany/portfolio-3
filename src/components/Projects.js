@@ -14,7 +14,7 @@ export default function Projects() {
             alt: "problem solver",
             languages: ["Node", "Rails", "Sass"],
             github: "https://github.com/cTraymany/js-problem-solver",
-            website: ""
+            website: "https://problem-solver-frontend.web.app/"
         },{
             title: "Social Media Distancing",
             description: "This Ruby on Rails web app allows users to break unhealthy social media habits through creating goals that focus on themselves. Register safely with Bcrypt encrypted passwords and start journaling your aspirations! Or sign in with your Google account for a faster experience provided by omniauth. Journeys and goals are stored in a SQLite3 database.",
@@ -22,7 +22,7 @@ export default function Projects() {
             alt: "social media distancing",
             languages: ["Rails", "SQLite3", "CSS"],
             github: "https://github.com/cTraymany/Rails-Social-Media-Distancing",
-            website: ""
+            website: "https://social-media-distancing.herokuapp.com/"
         },{
             title: "Natours",
             description: "Following the designs of one of Udemy's top 10 instructors, Natours utilizes vanilla HTML and Sass to build an interface for a fictional tour guide company. Natours is a fully responsive website, using advanced query selectors, and displaying progressive CSS properties such as animation, shape-outside, and backdrop-filter.",
