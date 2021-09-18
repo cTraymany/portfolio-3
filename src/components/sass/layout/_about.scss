@@ -30,6 +30,11 @@
     &__right {
         width: 66.666666%;
         padding: 3rem 5rem;
+
+        // ::selection {
+        //     background: rgb(17, 121, 17);
+        //     color: $font-color-white;
+        // }
     }
 
     &__text {
